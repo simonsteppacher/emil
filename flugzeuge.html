@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}[hidden]{display:none!important}</style>
+<title>Emils Flugzeug-Trainer</title>
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAYEUlEQVR42t17eZRV1ZX3b59z7r1vfjUCAhbIoAwySHCgEJEoCRgTNcGgNmq0tQ2xNYMZTOJKwJWO0W/lk9ZlGtPa6XwdNJG0iUM+jSgoiCiaANpMMklBYVHU+OqN995zdv9x3yuqipqSIJ30WeutV/XeO/ecvc/Z+/z2b+9DOLERwGCGAuCPnHvnxVKozzN4JBszn4gcgNFbGzak7AsNjW0PgSgBZg6e1WtjkCSCOTS0PH7v0bbsv7LxDEACfTY2JB2hhF4TcZwNqby5l72cDyLVderMXCAh1jDosCBeXbduxVpbCby6/oNwbW1NHj0mr3oMQgAxQPjqPz1a9czanQ9KZS+m43NAX8L/dTQGERwS8nIK5vvFkRd/9eVhZaEfXDS75rXjC3xciC4K+L4AyIyae2NIi8r7X337g6PMmAIAxngeGAIEib+Bxr6nASYQtHISl3bk3KbJC77u1+0++F+t+1e3B7IuNwAgjgu/jMdc+g9JpvI1yo7eCUFpgLPFR8q/FeGLayxBJMAg43taEI5kfb47Nqpmw7jz7kgAyziQGVBgJlCwJTwv9Dsh5WztZl2E7aI5wAfIgCEGHJeICdAc9GEwUx8/LPoH0kRicGMQGYBF0AcGYB8gv3+LJB/ECgQBoqPSDl1eMN5zAC4GljF4GSkQESZdrUZUDl0hQxWzdaEDwo7aWpsQw5STiiho6sefHW++9h0Gykk6AA/gK0iC/VyFYR0i6ajA/1H/9q0csJ9NamMipEIKxqgB/KYiFYIx+SgbU8FkIEOJi0bMueOR+uajXwGt9omZwz/8txdiT/1u001Cmxwzk5CWGDu68o26w81nej6qDLvMTANqYPr44a++t+9IrTawiQQzG+p9MQUzEylpOsYOH/rO3vrmeQONQcQsyKZIRB4ui0YajhzLzDS6YJj63jXEMEI6orrM/q+C0U4q5Y1n9nwjZOTzn5r1s+/cvDCtVq/erh9b9dLDkPZY1i6DAVKOrDvc3NTS1rHQZzGBjTcoEzjQ2LK/JZW7BkAUzP2bAAuyLWrJ5PNec1tqiRAMNkz92LUhqUUmz2/lc97W1rR3Pft5DXA/vok0KSO1n/+VZ0wi52IhdMGDtOVjq16aMT5ec4P68oqV51shZzF8P/CJDBBLZAveaQXfnEPCnshsBmUCmZxfrT2/lpQj+zMBKQSaWlO4dfEluPKSabWf/uI/R8oTUWiYvkdhBrFEwctnFLlNhtQMZgJI9mcCIJLIFbzNhnWlIWcGGyq6DznzyytWPqIsSy4BwGx8P9Am+TCukiLkCuKsMa5hHtwOkBTzINDBxk2AwQGuOHEptQFiYYUbPjML084aGZk1dbR5+719iEVDMMb0uQNgSEhBOSGEy9o1zL4P7ollurslaFcJiwpsKB/00RoMkLSUZcklghk1AFEgIInSO7MhMKjrZwO9mJnApf9776OkEK2pjLj84hni7HHDhQH4S383X3i+FkT9PL9zDkwcLP3A8+rSpwjygs+Cz4kZNYLB81i7OBXnPBEh7/o4/bQq3PvlRZBSwC349Ol503Ht5bVoTWUghTglOIG1CwbPEwG2PzVNCkIqncXS6y5FJGzjhm8+ivk334dXN+/Et/7h04iGHGitTx1eInLEqcL2REC+4OGMEdX4+0Vzcd/KZ/HEcxuxfc9h3L7s3zFiSDkWf2oW2tI5SClOkQoG4dhO3uoLpDJ53Hz1POTyHp54/g2MGFaOirI46j5sxuoXN+MrX1iISMiG1uaU7YJTpoDgJGNUlcWRzbnI5guBazcGYMaHTW1IxiKwLVWMpP8XKoAIKLgeomEb8WgYzAwpBEgQRgytgOf7p1T4/wEFEPIFD+XJCBYvvABHGlvR2NyOsTXDcMW8c9CRyUPKUxt0qt4ZoRP+pj9ho1Px5732EUUHd+eNC5AruNh78Ci+fdtnEAnb0L7pbyDqZ37992EUMU23+QUKGDak7AvdAwhioRSdNXLotv1HPjzgeaLMkM/MPKASZkwa9fY2QV/Uhq2e34VtJY+1pFPnTR1zC4BPViZjesV3lshO0MqgirJo88hhld/IeQWtSArTBU8TEQuhKOrIo9Xl8aYPGjrqjG8zk+g7gGLDQkWoOhnaq9mzW1LuGuNHmOm4LKqhse2h7iojH9JWbsH9dksqfY0xYtpgofA2QUuPNLQ+wETxnpygkhIMw3/ccSA8c/JoFDxf+ppARDDGUDhso70jW364oWWFrz0Qye70G8GQsIWSZl1TS2pTa9Z8B37eZ/QNhQnwoVyVStFKrU15zsdi+K7mLgGUAlGip6cmEtCaHWaTAKkEuOjBBmjaaJvBZSAR7W02JCRKOIeIIIqor/TOAe2WCJBszx3OAZJlHdcaIZBIcPGzvk8dU5RFR4wxUZAq9uliAie6XfLBRoEME0MzDINRZGMG9Kkc9Gc+gRVmLpGqNOBZ2ftJYMBGEEGDYMCmNJbqlxFio4hggmDKMBjdQmh1giMJbL2Ho2Ea1BY47nh6dZ5CCNAAj5FCkO41IuxlXszU7wN7laXb/E7NMShEMM+OdA6u5/e7+O3pLHxfnzI4/JGOIoigpEAu76ItlcU/LpmPz82fibzrd4v6iAiuqzGsOokf370EkYiDtlQGQtBHrgj1kT1YSWRzBaSzBcyaPg7L71yE2nPGQRvA9XSvBqWUwg1XzsbHL5iIB//9Rfzs6fUAGMl4BMzmIwnbTroCpBTQhtHY1I6zzzwdS6+9FFcvPB+RkIVs3gcR+jRbZkYm5+G0oRX48d3XYdGC8/DIqjV4ft0WOJZELB4GQf91KkAIguNYorU9g7JEDHdc/wl89abLMKQijryrkcl7gyI7pBRwXR/MwKzp4zBr+jj84tmNeGTVy9i+rxGVSYdsSwnk3ZOmAO4lacHH2duAJkUfxAEBJKVAJudiz4EPMwvmTOWv3fwpnDflDLieQTrnQUnxJzE9RAQiIJP3AABLPjMbl8+bgQcefxG/eelN90B9Y7qsrAJGEAwz94mIO2WhrjJ0k0WBZM9j0AJJMFgyswOSBNKyt0GUFPB8D+3tGYyrGar/44Glt00cNzwGgNM5l6QQUH+BEyspLZ3zEA7Z9MOvXIVv3bpwzPceXM1PvPA2BPsiGo2Q1qZ36MDGgpBg1hYDFoQkkFDdgBDBHOqhNU0w0rLsdiXFId+YZIBgSkCIIYSAIKLWVIcfDTvVy+9cFL3pcxfJRDT08Wze74S+J81OpYAxoHTOQzIamvDP91w/4cr5M3HPitV4d1fdoYqyKCwp4fckUog1sZFKiSbS7Hu+ORQ4EdM5OTr3qntu6dZHSMNSijNHlf/xUH3r6JyLCiKftW/IsiQcy8KRY23U0NjqPv3IXTUfmzxqaXkyMsz1DDytWYqPltU0xjAJYcK2FJmcqxub25+67q5Hfr/7YIMzccyIIMdZ9A8kYFiGxJCKyG6/UHBaMt5o8v1uGSuqmfc1PiEBoUJIRsU32lPpmyBCk9i4kFKiUPDQns5hxqTRuOdLV+LS2okQADI5r4jyBmLgihZJ/SNhGkzcoQ0sS8JWAu8fbMKKn7+AVc+9AVtJxGNhGMMwRkNYEYSE9y/a6EoPzufZy3ePBYLKjB742XhKUMgjQpagjc/aNDWnxJjTh+DuWy/DjZ+dg0Q0jFzBBzOTlIL6XzWGYQ6coRJ9cn5E1HkKgAIg1ZcypAyek/G0OXNUFX7yvetxxcen4yerXsZrm3cgHLIRDtm+Np4iSS6RKLD2iomRbrFAj3CqmEwggpBSydaOnAhZhCVXzBH3LL0Sw4ck4XoGmZwHKXvH9syAYQNwMNFIKDhtcwUfre0ZJOPhE5xWiS5zPR9VZUEw6foMrwidS3D6RIWRKPmdT144BZ+4cAoe/eVarHzyFRw41CjKKiqEJSVpowkQAowg3C0pMjn6/GU9F8yyHKF997nm1o6p504dP+Kh7y7hL113CYUcB7mCD4AgBJ0gNLMxxjApJRG2JWxLQhvGtl11ePL5Tfj6/avg2BYumDYWeVd3PoOZYdsKhz5swVW3/19s31sPgDC0MoFELATbkpBSwPMNjGEmAlMXbVBxpxRcDd8wZk0fi0ULzkdbOmt2HmgU7an2N+OxSNjTmMbaZ3TJKPdKiTW3tWPGhNOH33fX4vKr5s8EARTYOXU71piDrQ0GLEvBLn7Z0p7FH7YfwNadB/HS6+9ix9565AouUpkcbqL+vX3DsXb87On1+MWzGzF6RBUuPn8y5sw8C2ePPx3jaqoBgAxA+YIPNtxtZ5TihnTOQyIexcP33IC/u6IOv/jtOuvJ595QdjgGmyiANn0pgAH5zZsX4LZrLvlmZVlUBXYegJ2eQtuWgqWCwVs7cth/rH3XT3/1yvjX3t4lP6g/Bl8b2EoiErJRVRaDNmYAKiB4ZkUyCoBw5GgbHl+9Do+vXouq8jhmThmHKy+Z0frZT5zbHnHU6BKVlg98UacylBTQWiPjsbpgSg0umHLjFy6bO118/6H/RH1Di7S6UO+qK+joyOTwk+U34/MLzoPrs0rn3OJ5zoHjIsBWx4Vuac9i87v78PvX38X6d3ah/ljbsmw6/2g0GkrGo2EmAjEzjGH4OuAjBpM70NqAiGDbCqFQQC/mXc+s2bRL/P/1W9566D9+/2rNyOE/+mTtBH3RuRPU2NOrA9tlIF/wYZghig41m/dBgiKXXTQN50w6A5fd+gAaGttg24ESVM8VGFZVBm0MCq5vBBEZwxRyFEom39yWwVvb9uKlje9hwzu78cHhY/C1RiTsYHxNdeTw0TYyjL7T3H9iIkVr7swrJmNhWMpWre0ZZ3fddrywdjOqKuM49+wxWDBnGuaePwlnjKjs7J93dbDShjmTNyhPRinsWN1IsBNMIFfwQCCEQrawiua+71AT3ty6B3/Yvh+vvrUTB480QWuDcMhGPBYGUXDUFXxjgp1CJx0AMQPaGJBvOBa2OBkLg8NAwfXx0sb38ML6baiuSOC8aWNx8bkTMXXCKEyfWINo2AIAKviMfL4QmG/3YIhNyfqZDcoTERaCKJ0tHP3N+m2h37z0TvLt9/bxsZZ2IiKEHRvxaAgEwHAANrpS1yA2AIoVlV35P0bR+wxQDVU8P0+MugLATzDMxFr7hrUxgmCSsXCw4gUXL67fiude+QNiEQcTxo3kS2dNpgUXTvOmTxpNyVhIEZWq14KYSJF0RAmlhaNx/PaVrfiX1ZuwY+fuh3fuq7/BDifLww5QWVnZCWqYi36UukuijbbBVEbqxCoxkgKk3P5LWkAg6QiC7gVfsCDpgE02rrUJkQoJsLZBAiVjk7aNpBOBIII2Bjv2NmDLnmasfHLtU7XnjCufPnXS5b4hkOWApAUwQymh15QWSFkC//rLNUaTEuNPr9gzenjVq66mQ77vMrNHACD7qZgri0YOt7dlnzEwEVB3H2AJCNauW5EITQZQU9QQdUHJZNsybwn9OrNmSUTcfSswCU2W5WyJRULvFzq8NSzYgLTohT+GIiAZtbWywzJq05sbt+yJ/37T+05FzDJRhwSzDwhARRxnQ9e+iVilEdIWw6sTDYcbmrewx0dsxYMqk6sujzc1tnS8wWCHmLplkyJhJZpaVWZYdVkSQA2BOhVQckqObeUrymMbcjnXaGaC6RbaM0uHIjY+qEzG6rNexwbSjuF+EjZEMCyFiCUiByckIqFU1rPzuWy3PiqVN/f28IIgRSh4R7/dkcrcCis+hs3gqsTer2s82taRvZ9U6LhrKQKUdMFDc4eHbbvrMXfmWeAuhGwJ1aU6cmV76tqWS0mIRoKCqeOWxCBpkEln3spkCmvTOvRt9vyBCsxBlgPvw6bHteFKT0auZE/3CIa8nH9CMARWStpZItFs/FzNYOsElbLzxNzCfi4BBgtBBAJam7MoT0Zx9y2fwGfmTRMFT4uu8RMRwfM0qiti+PE3Fvkrf/UKdrx/GPFYCLal4Ac1BEFiRFCrEJThQtZnv+APQOv5IFLCpg4mttjP+ey7PRIj3ertSzErKTYQxbI5BcB0DSD6PqoEMaCkkIrZcDqTJ18bXPfp2bjrpoUYWzMEmkus8ImxhOPYuPGqC9WiBefhyd9twg9XPoOm1o7i+S+MIRKAkcEWLs675/x7PhSkmFl06UPFxOPJZ4WVEkIIgVQ6B4Bx8fkTcft18zHvgkmdGF0KGpAVVkrhlkVzMffciXh89To89eJbaG5NIZksQ8g5ufUDJ0UBpTj+8Iet2Wy2wPMumIwvLp6HS2ZNBhGQLfjBKSMHxwobw0jnPIytGYIffX0x/v7qeXjs1+vw65e24MjRJh43ahhLF/BPjgIIf0mlmBQCeddDqiWrv3bzp2bOr53sXHTuBAYCwUtlMFzCEOA+GWLD3BnhKSlQcH1owxhbMwT337UYt10zH2s2bHWWPfyf0mOFWIjwlyFugmLmAhGcP3flU5kczhg5BN+7/Spxw1Vzvx4NKWTyXgDaqMQTMKSUsItBVK7g9+IDGCE7iDk8n2HYwNcMIiCX98CAGD28Ardd8/HZH5syZuIPVz6LDW/vlCHHgiD6s5aQmQuCQOtI2gjSxn9aIiSTzWPptZdi7c+/g6XXXkKCoNvTeRZECNkK0ZCFWNiCYyvk8gW8uW0/XnlzJxxbdYsMjWFYSmLvwaN4bt1WpDI5GMOIhS1EQxYiYQuqmHtoTxfUzMmjhzz98J34fw8sJdu2oAfJI3Zx9JqkDQKtU8xcR3/m6ruej/OnjUMiFkLB1Qg7SoYdBQbQ2NyBnfuPYNMfd2PLzjrs3l+Pto4cGpvbserHt+Oz82eiI+tCCgHHlmhNZfC5O1agrr4Jo0ZUoboygY9NHo0Lpp+Js8ePxOgR1YhH7BLQg9GMC2eehbBjI5d38eekH5i5TgG0CqxvLQYbXMQBRYhNOqgthwH3LJAIqo6KQIU/qD9GhrH5t2s2n71116HIjr2HceRoC3xtAiEdC7YlUZGM4Z4VT2HSuBGYcMZpyOY9IhB/40dPoL6hBVUVcTS1dqChqQ1vv7sPP/3VOlSWxzBqeBVmnXMmxpw+JP3J2VMzVRWJoUpKLhZPdzn2euCA4CaZOX7NBhoEAdYCoFUEgEbMueM1FU7MYe0GtLUKIx7yikgwMYZN4QQkSAT4vsGsc8Yjmytg+956ZNOpG3MF7+ehSBy2EnBsq9PHmmLRiBQCmVwB1RVxvPjYtzCyOoLb7n0Cq57diKGVSfhad6bGSrbt+xoF10PBF4DX8WZZPPzyyFFj7xlzWgx/2H4Q7R1ZKCVPLHZhA7KiCHHmcc2myhOxK9jNgKwQ/FxqQ/2Gh+cqZrZrr1l2d2ta30ICrSAIElqMqEy8c4RhtK9HmD4uQQqL8Prmd2HYoCwRRW3t5P0799X/H8/AYa3ZGE29gbOyygj2HDysX3l9S2LhRVOqfv279fvGnFZueb7Pdmds2qXCzAGSEZulClHYie9JRsMHdnxw6KFduzpMZTIu4mHqBr27mKkhpUV5KLHRhR/O5M1BI4QLQZXl5RWPHWa26Y033gjPvWhObvoV35rZnuG7WbvtQjn2aUMiv2xsap+lfTnKsNtnOqPEFWptMH70kH/be7DxWgbCYOK+64GIpbSQyWTbImH1NEjdDKNh+q0fYhbSJkdhRzIWe/9YR+FKqfPa1Ub2E1xrko5MROTL2uhYOqfPAziWjMr7tj5z/zuvrd8QVrW1tTngarnjSEtdubKmqnByvPEZTa2Z7ZmMew2s2Fg2/XAY+nixSUNzan2u4N96PBiivsuIDEASHclYdHdjyr8+IFZkP5iEQVBw3fRbntZrczq8hAe+bRug3o5sXrNJaqfyaq+9YXd9u1fn+Z+VtbW1uSISnMSZTcsbR8390oy01/G8sONzLUFpIahJ+/lRbDweVDAkIwVibmUvP7i7w4KawcgbL6+Z/QHuDcLAQJCiNiVkhvN5zb43UDDkMeWEtKnNaBriZ5q36mRhdub5n2ZLFyeLAy43wPfFjtd+kibTtsB3sw8xc4IZ8W4DEGR/L2YmRv+/6fZilsyGgtsq3P9vS98zBHde4+2jT6mqjFhKadvaYGRE0gPpg4cu/rBT+ODqbBftLTcA08HXKA/gy4t+8Ohpz6zdORXAJCEtiwGw9vC30EhZsmgCwnezL1eVhVZufea+jT6X7G+56SMYKrE0jAe/i6YHv4trR86989HO6/OMfq/P/xWIDmYuwOjO6/OHX12xtlEJrN9Y1+v1+f8GrkZWDI1480kAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFW0lEQVR42u3dQU7kRhiGYXdRQizTB0iWc41kNceZSHMQpHAcVuEaLMMByBIhIbKIOkKkYbptV7nqr+eVZjEwjKvLrz9/FrZrN63E6+vrT9M0Tbvd7u9Tf+bnX7+9ToX4688/9tM0Tb/89vvj1AAjjefh7mZXw59j5FoTWFJetMWxfT1H8uaEJjGOuVBS7kxkbCV3CbETmbGl2Gv7kkiMFjv3ZkKTGS2RyIxIaZ2JjEgXjYnMiJTWicyIJHUiMyJJnciMSFInMiOS1Mk0IRJJOiNSSicyI5LUicyIJPXu8KQAEL5DA72xW6tueIbPeLYYz/v7PZLujEhdWuWoxNPzy6NZqNihpXM57m+vSV0ppSU0YiY0yqbzR39HAaHVDUSpHRK6YjpLaZUDIHTL6SylCQ2cLrQLwvrpLKXLXRhK6I1kJrXKARC6hXT+8vX7f3+kdFmyKSjHMYEPXyOxhO4qnT9K44++T3BCA4RuIZ2lNKEBQreczlKa0AChQWiA0AChAUIDhK6G20cJDRA6QkpLZ0IDhG4xpaVzGdzgX0Hqt/drEJnQw3RqLMcaKwsp8Yrcq8uLvZnVoYFpt9aLZkZdQ6REnTj3nmr7S0JD5QAIDRAaIDRAaBAaIDRAaIDQIDRAaIDQAKGB0/HEykxKPoVy7NEtSOguZd5iOxKayNW3Ka0JHSopia1yhDztqyESOpw40prQIROQ2IQOeSontg4dspfq14MndEQBRk/rTOTYn3E0sROZfV4JbcdKa0ITmdgqxyJKvOrWQS6hN9lhZB7zYM/RRMbYNSQTGZHETmRGpPnsdo0VHbk8Pa710p3QRCb2p0L3tMaKerEdpbv1Wv50cVFIZBeNIYQmMrHPJZEZkfZPNlGIlNaZyIgkdiYyIomdyIxI+zUTGZHSOhN5HocdVXLx+gjzVVvsTObzRdtie73P3/3tdZX5y0RuS+LIctdI60zkdiWOKndJsTOZ+5A4otwlasiqQj89vzz2MqkRn3x+/5l62BdrjzGvNage7lMe7S1CPaX3Wv7klo4uEpN7ab9OEWX+8vX7dHV5se/xESLzs8yvHEVkSRwvueekdY6yMzBW5w4jNInJ3b3QJCZ390KTmNzdC01icncvNInJ3bXQBB5L7tqCZxIjUnpnEiOS3KsKfXV5sS/5bjuQ+0ekNQZ1uDfALsKSMLy6vNgvPbPnpUcW0FJyJzKjF7mrVA6gJQiNUHS7xkorlHj0zAW2hAb+Teie1lhpcTwlXwUWYX5qj0dCQ+UACA0QGjiPbArauRh8/3/7rSyhuxaZ2IQOKTKxCR1SZGK7KAwrcw/jktBEltaElnzEJnT4UzixCR2yi44udiZy7M84mtiZyMQmNJGJTej69LTMnIN7HVJkmek73vyEE/r+9lrFGPgMliOJDP06P9zdrPagLJGJvSUPdze7TGREEtuvvmdQ8g31PS5AT+iO5f3o36wh3rFtHfsayQm9qsAlpD5nu1L8B0L3fmG4hcCjVKCeLgiHTOiSAs9N6bXHNLLgoYXeYs2Xc6WucYYYqYen95Hde/q2sObLqZJuWXfermnSe+16627uXeCWx/ZZCrY29ig1JX1kOpnLjbHnsbeczv8TGgjToSN16ZaTztPZ5dJ5mqyxUo2n55dHa6eUh9CIJfRn3zznt4ejrrFiPPXH81ktTnN/EGilN58sNNAbaekRAbSSzicnNKnRg8xnVQ5So3WZz+7QpEbLMs+6KCQ1WpV5mmbebXfY0KhPuaA9kWcntLRGqzIvFprUaI3UwlEFqdyU0OTGXFfW9iWXPOJcNKJ26OVaAyc3iWtsJ2/5gUhO3rX5B2a/aDPe5jfNAAAAAElFTkSuQmCC">
+<meta name="apple-mobile-web-app-title" content="Flugzeug-Trainer">
+<meta name="theme-color" content="#1d3f6e">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: Naturkunde-Heft auf Häuschenpapier (hell) bzw. Waldgrün (dunkel); schmale Spalte, oben das Foto, darunter 3×3 Namenskärtchen. */
+:root {
+  --paper: #f3f7fb;
+  --grid: #cfdcea;
+  --ink: #1d3f6e;
+  --ink-soft: #5b6f8c;
+  --surface: #ffffff;
+  --edge: #b7c7d8;
+  --key: #ffffff;
+  --key-press: #e3ecf5;
+  --primary: #1d3f6e;
+  --on-primary: #ffffff;
+  --right: #1f8a4c;
+  --right-bg: #dff3e6;
+  --wrong: #c8372d;
+  --wrong-bg: #fbe3e0;
+  --font-display: "Baloo 2", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14243a; --grid: #223650; --ink: #f3f0e4; --ink-soft: #aebbcf;
+    --surface: #1c3049; --edge: #3b5473; --key: #223a57; --key-press: #2d4a6b;
+    --primary: #f3f0e4; --on-primary: #14243a;
+    --right: #8fe0a8; --right-bg: #23543c; --wrong: #ffa69c; --wrong-bg: #5a3230;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14243a; --grid: #223650; --ink: #f3f0e4; --ink-soft: #aebbcf;
+  --surface: #1c3049; --edge: #3b5473; --key: #223a57; --key-press: #2d4a6b;
+  --primary: #f3f0e4; --on-primary: #14243a;
+  --right: #8fe0a8; --right-bg: #23543c; --wrong: #ffa69c; --wrong-bg: #5a3230;
+  color-scheme: dark;
+}
+
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.4;
+  padding-inline: 16px;
+  padding-block: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *::before, *::after { box-sizing: inherit; }
+main { width: 100%; max-width: 460px; display: flex; flex-direction: column; margin-block: auto; }
+section { display: flex; flex-direction: column; gap: 16px; }
+
+h1, h2 { font-family: var(--font-display); font-weight: 800; line-height: 1.05; margin: 0; text-wrap: balance; }
+h1 { font-size: 2.6rem; }
+h2 { font-size: 1.8rem; }
+p { margin: 0; }
+.soft { color: var(--ink-soft); }
+.back { font-weight: 700; color: var(--ink-soft); text-decoration: none; }
+.back:hover { text-decoration: underline; }
+a { color: inherit; }
+
+button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+.primary {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem;
+  background: var(--primary); color: var(--on-primary);
+  border: 0; border-radius: 16px; padding: 14px 20px; width: 100%;
+}
+.primary:disabled { opacity: 0.35; cursor: default; }
+.primary:active:not(:disabled) { transform: translateY(2px); }
+.ghost {
+  font-weight: 700; font-size: 1rem; background: transparent; color: var(--ink-soft);
+  border: 2px solid var(--edge); border-radius: 12px; padding: 10px 14px; width: 100%;
+}
+.ghost:active { transform: translateY(1px); }
+
+/* Startauswahl */
+.modes { display: flex; flex-direction: column; gap: 12px; }
+.mode {
+  font-family: var(--font-display); font-weight: 800; text-align: center;
+  background: var(--surface); color: var(--ink);
+  border: 3px solid var(--primary); border-radius: 16px; padding: 16px 18px 14px; width: 100%;
+}
+.mode:active { transform: translateY(2px); }
+.mode b { display: block; font-size: 1.5rem; line-height: 1.1; }
+.mode span { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.95rem; color: var(--ink-soft); }
+.best { background: var(--surface); border: 2px dashed var(--edge); border-radius: 14px; padding: 10px 14px; }
+
+/* Quiz */
+.progress { display: flex; flex-direction: column; gap: 8px; }
+.dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; }
+.dot { height: 10px; border-radius: 5px; background: var(--surface); border: 2px solid var(--edge); }
+.dot.now { border-color: var(--ink); }
+.dot.ok { background: var(--right); border-color: var(--right); }
+.dot.no { background: var(--wrong); border-color: var(--wrong); }
+
+.photo {
+  position: relative; width: 100%; aspect-ratio: 4 / 3; max-width: 100%;
+  background: var(--surface); border: 3px solid var(--ink); border-radius: 16px; overflow: hidden;
+}
+.photo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.photo .loading {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; color: var(--ink-soft);
+}
+.credit { font-size: 0.72rem; color: var(--ink-soft); text-align: right; line-height: 1.3; }
+.credit a { color: inherit; }
+
+.feedback { min-height: 2.6em; text-align: center; font-weight: 700; font-size: 1.1rem; }
+.feedback.ok { color: var(--right); }
+.feedback.no { color: var(--wrong); }
+.feedback .solution { display: block; font-family: var(--font-display); font-size: 1.5rem; color: var(--ink); }
+
+.choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.choices button {
+  font-family: var(--font-display); font-weight: 700; font-size: 1rem; line-height: 1.1;
+  min-height: 3.6em; padding: 8px 4px 6px; hyphens: manual; overflow-wrap: anywhere;
+  background: var(--key); border: 2px solid var(--edge); border-bottom-width: 4px; border-radius: 12px;
+}
+.choices button.s { font-size: 0.9rem; }
+.choices button:active:not(:disabled) { background: var(--key-press); transform: translateY(2px); border-bottom-width: 2px; }
+.choices button.ok { background: var(--right-bg); border-color: var(--right); color: var(--right); }
+.choices button.no { background: var(--wrong-bg); border-color: var(--wrong); color: var(--wrong); }
+.choices button:disabled { cursor: default; }
+.choices button:disabled:not(.ok):not(.no) { opacity: 0.45; }
+
+/* Ergebnis */
+.verdict { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.badge { font-size: 5rem; line-height: 1.1; }
+.score { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.score div { background: var(--surface); border: 2px solid var(--edge); border-radius: 14px; padding: 10px 6px 8px; text-align: center; }
+.score b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.score span { font-size: 0.85rem; color: var(--ink-soft); }
+.score .ok b { color: var(--right); }
+.score .no b { color: var(--wrong); }
+
+/* Stufen-Zähler (Feuerwerk, Krone, Daumen, Keimling) */
+.levels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.levels div {
+  background: var(--surface);
+  border: 2px solid var(--edge);
+  border-radius: 14px;
+  padding: 10px 4px 8px;
+  text-align: center;
+}
+.levels .ico { display: block; font-size: 1.8rem; line-height: 1.2; }
+.levels b {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.review { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 6px; font-size: 1rem; }
+.review li { display: flex; align-items: center; gap: 10px; padding: 4px 8px; border-radius: 10px; }
+.review li.ok { color: var(--right); }
+.review li.no { background: var(--wrong-bg); color: var(--wrong); }
+.review img { width: 56px; height: 42px; object-fit: cover; border-radius: 6px; flex: none; background: var(--surface); }
+.review s { opacity: 0.8; }
+.review b { color: var(--ink); }
+
+@media (max-width: 360px) { .choices button { font-size: 0.9rem; } h1 { font-size: 2.2rem; } }
+@media (prefers-reduced-motion: no-preference) {
+  .choices button.ok { animation: pop 0.25s ease-out; }
+  @keyframes pop { 50% { transform: scale(1.08); } }
+}
+</style>
+</head>
+<body>
+
+<main>
+  <section id="start">
+    <a class="back" href="index.html">← Emils Lernseite</a>
+    <h1>Emils Flugzeug-Trainer</h1>
+    <p>Du siehst ein Foto und wählst aus 9 Namen das richtige Flugzeug. 10 Flugzeuge pro Runde, nach jedem Foto siehst du die Lösung.</p>
+    <div id="modes" class="modes"></div>
+    <div id="bests" class="modes"></div>
+    <p id="total-start" class="soft" hidden></p>
+    <div id="levels-start" class="levels" hidden></div>
+    <p class="credit">Fotos: Wikimedia Commons, Nachweis jeweils unter dem Bild.</p>
+  </section>
+
+  <section id="quiz" hidden>
+    <div class="progress">
+      <p id="count" class="soft">1 von 10</p>
+      <div id="dots" class="dots" aria-hidden="true"></div>
+    </div>
+    <div class="photo">
+      <img id="photo" alt="">
+      <div id="loading" class="loading">Foto lädt …</div>
+    </div>
+    <p id="credit" class="credit"></p>
+    <p id="feedback" class="feedback" aria-live="polite">Welches Flugzeug ist das?</p>
+    <div id="choices" class="choices"></div>
+    <button id="btn-go" class="primary" type="button" hidden>Weiter</button>
+    <button id="btn-stop" class="ghost" type="button">Abbrechen</button>
+  </section>
+
+  <section id="result" hidden>
+    <div class="verdict">
+      <div id="badge" class="badge" aria-hidden="true" hidden></div>
+      <h2 id="headline">Geschafft!</h2>
+    </div>
+    <div class="score">
+      <div class="ok"><b id="n-right">0</b><span>richtig</span></div>
+      <div class="no"><b id="n-wrong">0</b><span>falsch</span></div>
+      <div><b id="n-time">0:00</b><span>Zeit</span></div>
+    </div>
+    <p id="record" class="soft"></p>
+    <p id="total" class="soft"></p>
+    <div id="levels-result" class="levels" hidden></div>
+    <ul id="review" class="review"></ul>
+    <button id="btn-again" class="primary" type="button">Noch einmal</button>
+    <button id="btn-menu" class="ghost" type="button">Zur Auswahl</button>
+  </section>
+</main>
+
+<script>
+(function () {
+  // [Name, Commons-Datei, Fotograf, Lizenz, Kategorie]
+  var BIRDS = [["Airbus A320", "Airbus_A320-200_Airbus_Industries_(AIB)_'House_colors'_F-WWBA_-_MSN_001_(10276181983)_crop.jpg", "Laurent Errera", "CC BY-SA 2.0", "z"], ["Airbus A220 (Swiss)", "Swiss,_HB-JCC,_Airbus_A220-300.jpg", "Anna Zvereva", "CC BY-SA 2.0", "z"], ["Airbus A330", "F-WWCB_A330-203_Airbus_Industrie_TLS_27SEP13_(9972134676)_crop.jpg", "Ken Fielding", "CC BY-SA 3.0", "z"], ["Airbus A340 (Swiss)", "Swiss,_HB-JMB,_Airbus_A340-313_(15834143394).jpg", "Anna Zvereva", "CC BY-SA 2.0", "z"], ["Airbus A350", "A350_Berlin_ILA_18.jpg", "Leo067", "CC BY-SA 3.0", "z"], ["Airbus A380", "Airbus_A380_overfly_crop.jpg", "Roger Green", "CC BY 2.0", "z"], ["Airbus Beluga XL", "\"Beluga_XL\"_A330-743L_(cropped).jpg", "Julien Jeany", "CC BY-SA 4.0", "z"], ["Boeing 737", "N8749Q_Southwest_Boeing_737_MAX-8.jpg", "Tomás Del Coro", "CC BY-SA 2.0", "z"], ["Boeing 747 (Jumbo-Jet)", "747-8I_(N6067E)_takeoff.jpg", "Dave Subelack", "CC BY-SA 2.0", "z"], ["Boeing 757", "Boeing_757-204,_Thomsonfly_JP6109547.jpg", "Pedro Aragão", "CC BY-SA 3.0", "z"], ["Boeing 767", "MyAustrian_Boeing_767-300ER_OE-LAT_(25086343941).jpg", "BriYYZ", "CC BY-SA 2.0", "z"], ["Boeing 777 (Swiss)", "SWISS_Boeing_777-300ER_(HB-JNL).jpg", "Malokkii", "CC BY-SA 4.0", "z"], ["Boeing 787 Dream|liner", "Boeing_787-8_maiden_flight_overhead_view.jpg", "Dave Sizer", "CC BY-SA 3.0", "z"], ["Embraer E190", "2010-07-08_ERJ190_Cityline_D-AECE_EDDF_01.jpg", "Wo st 01", "CC BY-SA 3.0 de", "z"], ["Bombardier CRJ", "Crj200-austrian.JPG", "Barbarino", "CC BY-SA 3.0", "z"], ["ATR 72", "ATR_72-600_ATR_house_colors_F-WWEY_-_MSN_98_retusche.jpg", "Laurent Errera", "CC BY-SA 2.0", "z"], ["Dash 8 Q400", "Flybe_DHC-8-400_(G-JECL)_@_FRA,_May_2012.jpg", "Milad A380", "CC BY 3.0", "z"], ["Cessna 172", "Cessna_172S_Skyhawk_SP,_Private_JP6817606.jpg", "Peter Bakema", "GFDL 1.2", "z"], ["Piper PA-28", "26-09-04_PH-BVT_Piper_PA-28-181.JPG", "AlfvanBeem", "CC0", "z"], ["Cirrus SR22", "Cirrus.sr22.n147vc.arp.jpg", "Adrian Pingstone", "Public domain", "z"], ["Pilatus PC-12", "Pilatus_PC-12-45,_Royal_Flying_Doctor_Service_AN0636290.jpg", "Chris Finney", "GFDL 1.2", "z"], ["Pilatus PC-6 Porter", "Pilatus_PC-6_SkydiveLillo_JD18032008.jpg", "JDrewes", "CC BY-SA 3.0", "z"], ["Pilatus PC-24", "Pilatus_PC-24,_P01,_HB-VXA_(18743050229)_(cropped).jpg", "Stephan Widmer", "CC BY-SA 2.0", "z"], ["Beechcraft King Air", "Beechcraft_B300_King_Air_350,_Flight_Calibration_Services_(FCS)_JP7067654.jpg", "Peter Bakema", "GFDL 1.2", "z"], ["Learjet 45", "Learjet45-gama.jpg", "MilborneOne", "CC BY-SA 3.0", "z"], ["Dassault Falcon 7X", "Dassault_Falcon_7X.jpg", "Dmitry A. Mottl", "Public domain", "z"], ["Gulfstream G650", "Gulfstream_Aerospace_G650_AN2224812.jpg", "Konstantin von Wedelstaedt", "GFDL 1.2", "z"], ["Concorde", "British_Airways_Concorde_G-BOAC_02.jpg", "Eduard Marmet", "CC BY-SA 3.0", "z"], ["Douglas DC-3", "Douglas_DC-3,_SE-CFP.jpg", "Towpilot", "CC BY-SA 3.0", "z"], ["Junkers Ju 52", "Ju52-Kress.JPG", "Markus Kress", "CC BY-SA 3.0", "z"], ["Super Constel|lation", "SCFA-Connie.JPG", "Oschti", "CC BY-SA 3.0", "z"], ["Boeing 707", "Boeing_707_Air_India_Basle_-_1976.jpg", "Eduard Marmet", "CC BY-SA 3.0", "z"], ["McDonnell Douglas MD-11", "KLM_McDonnell_Douglas_MD-11_PH-KCK_Ingrid_Bergman.jpg", "Boushh", "CC BY-SA 2.0", "z"], ["Fokker 100", "PH-OFM_(17565979644).jpg", "Bram Steeman", "CC BY-SA 2.0", "z"], ["Antonov An-225 Mrija", "Antonov_An-225_with_Buran_at_Le_Bourget_1989_Manteufel.jpg", "Ralf Manteufel", "GFDL 1.2", "z"], ["Antonov An-124", "Antonov_An-124-100_Ruslan,_Antonov_Airlines_JP6355463.jpg", "Peter Bakema", "GFDL 1.2", "z"], ["Antonov An-2 (Doppel|decker)", "Avialesookhrana_Antonov_An-2.jpg", "Dmitriy Pichugin", "GFDL 1.2", "z"], ["Rega-Helikopter (Airbus H145)", "Rega_Airbus_H145_Rega_4-2.jpg", "Johann Conus", "CC BY-SA 4.0", "z"], ["Airbus H135", "EC_135_D-HDRL.jpg", "LStrike", "CC BY-SA 3.0", "z"], ["Agusta|Westland AW109", "Agusta_A109E_Power,_Italy_-_Vigili_del_Fuoco_JP7735711.jpg", "Fabrizio Berni", "GFDL", "z"], ["Robinson R44", "Heli.robinsonr44.750pix.jpg", "Adrian Pingstone", "Public domain", "z"], ["Zeppelin NT", "D-LZZF_über_dem_Himmel_von_München.jpg", "AuHaidhausen", "CC BY-SA 4.0", "z"], ["Segel|flugzeug ASK 21", "ASK21_LSV_crop.jpg", "VegaAtoo", "Public domain", "z"], ["Dornier Do 27", "DO_27_beim_Anflug_9540.jpg", "Leila Paul", "CC BY-SA 3.0", "z"], ["F/A-18 Hornet (Schweizer Luftwaffe)", "McDonnell_Douglas_F-A-18c_Hornet_-_Swiss_Air_Force_4_(3735864334).jpg", "Mark Kent", "CC BY-SA 2.0", "m"], ["F-5 Tiger (Patrouille Suisse)", "Patrouille_Suisse_Northrop_F-5E_Tiger_II_(J-3082)_arrives_RIAT_Fairford_10thJuly2014_arp.jpg", "Adrian Pingstone", "Public domain", "m"], ["F-35 Lightning II", "F-35A_flight_(cropped).jpg", "U.S. Air Force", "Public domain", "m"], ["F-16 Fighting Falcon", "General_Dynamic_F-16_USAF.jpg", "U.S. Air Force", "Public domain", "m"], ["F-22 Raptor", "Raptor_F-22_27th.jpg", "U.S. Air Force", "Public domain", "m"], ["F-15 Eagle", "F-15E_Strike_Eagle_banks_away_from_a_tanker.jpg", "U.S. Air Force", "Public domain", "m"], ["F-14 Tomcat", "US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg", "U.S. Navy", "Public domain", "m"], ["Eurofighter Typhoon", "German_eurofighter.JPG", "Krasimir Grozev", "CC BY-SA 3.0", "m"], ["Dassault Rafale", "Paris_Air_Show_2015_150621-F-RN211-248_(18872301758).jpg", "USAFE", "CC BY 2.0", "m"], ["Saab Gripen", "Saab-JAS-39_at_ILA_2010_05.jpg", "MatthiasKabel", "CC BY-SA 3.0", "m"], ["Mirage 2000", "Break_M2000D.JPG", "Bobdenard57", "CC BY-SA 3.0", "m"], ["Mirage III", "Dassault_Mirage_IIICJ_(468968546).jpg", "brewbooks", "CC BY-SA 2.0", "m"], ["Panavia Tornado", "German_Panavia_Tornado.JPG", "Kevin J. Gruenwald, USAF", "Public domain", "m"], ["A-10 Thunderbolt (Warthog)", "A10Thunderbolt2_990422-F-7910D-517.jpg", "U.S. Air Force", "Public domain", "m"], ["Harrier (Senkrecht|starter)", "DN-SC-87-05770.JPEG", "U.S. Navy", "Public domain", "m"], ["F-117 Nighthawk", "F-117_Nighthawk_Front.jpg", "Aaron Allmon II, USAF", "Public domain", "m"], ["F-104 Star|fighter", "Lockheed_F-104A-10-LO_060928-F-1234S-011.jpg", "USAF", "Public domain", "m"], ["Alpha Jet", "Alpha_jet_zj646_arp.jpg", "Adrian Pingstone", "Public domain", "m"], ["Hawker Hunter", "Papyrushunter_2895.jpg", "Mike Lehmann", "CC BY-SA 3.0", "m"], ["De Havilland Vampire", "De_Havilland_Vampire_FB.6,_Private_JP6615516.jpg", "Peter Bakema", "GFDL 1.2", "m"], ["Suchoi Su-27", "Su-27_low_pass.jpg", "Dmitry A. Mottl", "CC BY-SA 4.0", "m"], ["Suchoi Su-57", "Sukhoi_T-50_Maksimov.jpg", "Maxim Maksimov", "CC BY-SA 3.0", "m"], ["MiG-29", "DeutschMiG-29G(DF-SD-05-07712).jpg", "Michael Ammons, USAF", "Public domain", "m"], ["B-2 Spirit (Tarnkappen|bomber)", "B-2_Spirit_original.jpg", "Bennie J. Davis III, USAF", "Public domain", "m"], ["B-52 Strato|fortress", "Boeing_B-52H_Aspect_ratio.jpg", "U.S. Air Force", "Public domain", "m"], ["B-1 Lancer", "B-1B_over_the_pacific_ocean.jpg", "U.S. Air Force", "Public domain", "m"], ["B-17 Flying Fortress", "B17_-_Chino_Airshow_2014_(framed).jpg", "Airwolfhound", "CC BY-SA 2.0", "m"], ["Tupolew Tu-95", "Russian_Bear_'H'_Aircraft_MOD_45158140.jpg", "Royal Air Force", "OGL 2", "m"], ["SR-71 Blackbird", "Lockheed_SR-71_Blackbird.jpg", "Judson Brohmer, USAF", "Public domain", "m"], ["U-2 (Spionage|flugzeug)", "Usaf.u2.750pix.jpg", "U.S. Air Force", "Public domain", "m"], ["C-130 Hercules", "Lockheed_C-130_Hercules.jpg", "Howard Blair, USAF", "Public domain", "m"], ["C-17 Globe|master", "C-17_Globemaster_III_1.jpg", "U.S. Air Force", "Public domain", "m"], ["Airbus A400M", "Airbus_A400M_EC-404_ILA_2012_05.jpg", "Julian Herzog", "CC BY 4.0", "m"], ["E-3 AWACS", "Boeing_E-3_Sentry_090512-F-7550B-902.jpg", "U.S. Air Force", "Public domain", "m"], ["V-22 Osprey", "V22-Osprey.jpg", "Peter Gronemann", "CC BY 2.0", "m"], ["Pilatus PC-7 (PC-7 Team)", "Swiss_Air_Force_PC-7_display_team_at_Air14,_Payerne,_Switzerland_(Ank_Kumar,_Infosys)_11.jpg", "Ank Kumar", "CC BY-SA 4.0", "m"], ["Pilatus PC-21", "Swiss_Air_Force_PC-21_A-102_parked.jpg", "Sandstein", "CC BY-SA 3.0", "m"], ["Super Puma (Schweizer Luftwaffe)", "Swiss_Air_Force_Super_Puma_Helicopter_03.jpg", "Ank Kumar", "CC BY-SA 4.0", "m"], ["EC635 (Schweizer Luftwaffe)", "Swiss_Air_Force_EC635P2+_T-351_at_BRN.jpg", "Sandstein", "CC BY 3.0", "m"], ["AH-64 Apache", "AH-64D_Apache_Longbow.jpg", "U.S. Army", "Public domain", "m"], ["UH-60 Black Hawk", "Blackhawk.jpg", "Suzanne M. Jenkins, USAF", "Public domain", "m"], ["CH-47 Chinook", "Chinook_hc2_za682_arp.jpg", "Adrian Pingstone", "Public domain", "m"], ["Mil Mi-24 Hind", "Russian_Air_Force_Mil_Mi-24P_Dvurekov-4.jpg", "Igor Dvurekov", "CC BY-SA 3.0", "m"], ["Spitfire", "Ray_Flying_Legends_2005-1.jpg", "Bryan Fury75", "CC BY-SA 3.0", "m"], ["Messerschmitt Bf 109", "Me109_G-6_D-FMBB_1.jpg", "Kogo", "CC BY-SA 2.0", "m"], ["P-51 Mustang", "31fg-p51d.jpg", "USAAF", "Public domain", "m"], ["Junkers Ju 87 Stuka", "Junkers_Ju_87Ds_in_flight_Oct_1943.jpg", "Karnerth, Bundesarchiv", "CC BY-SA 3.0 de", "m"]];
+  // Übungsstufen: key, Titel, Untertitel, enthaltene Kategorien
+  var MODES = [{"key": "zivil", "title": "Zivilluftfahrt", "sub": "44 Flugzeuge und Helikopter: Airlines, Privat- und Rettungsflieger", "cats": ["z"]}, {"key": "militaer", "title": "Militär", "sub": "47 Kampfjets, Bomber, Transporter und Helikopter", "cats": ["m"]}, {"key": "alle", "title": "Alle gemischt", "sub": "91 Flugzeuge, zivil und militärisch", "cats": ["z", "m"]}];
+  var KEY = "flugzeug";          // Präfix für gespeicherte Werte (pro Trainer getrennt)
+  var NOUN = "Flugzeug";        // z. B. "Flugzeug"
+  var NOUN_PL = "Flugzeuge";  // z. B. "Flugzeuge"
+  var VERB = "erkannt";        // z. B. "erkannt"
+  var QUESTION = "Welches Flugzeug ist das?";
+  // "|" im Namen markiert Trennstellen für lange Wörter (weiches Trennzeichen auf den Kärtchen)
+  BIRDS.forEach(function (b) { b.label = b[0].replace(/\|/g, "\u00AD"); b[0] = b[0].replace(/\|/g, ""); });
+  function labelOf(name) { for (var i = 0; i < BIRDS.length; i++) if (BIRDS[i][0] === name) return BIRDS[i].label; return name; }
+  var TOTAL = 10;       // Aufgaben pro Runde
+  var CHOICES = 9;      // Namen zur Auswahl
+  var FAST_MS = 70000;  // unter 70 s und alles richtig = Feuerwerk (wie im 1x1 Trainer)
+  var $ = function (id) { return document.getElementById(id); };
+  var screens = { start: $("start"), quiz: $("quiz"), result: $("result") };
+
+  function show(name) { for (var k in screens) screens[k].hidden = (k !== name); }
+  function fmtTime(ms) {
+    var s = Math.round(ms / 1000), m = Math.floor(s / 60), r = s % 60;
+    return m + ":" + (r < 10 ? "0" : "") + r;
+  }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  function imgUrl(file, w) {
+    return "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(file) + "?width=" + w;
+  }
+  function pageUrl(file) { return "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(file); }
+  function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+
+  /* ---------- Gespeichertes (pro Gerät) ---------- */
+  function bestKey(m) { return KEY + "-best-" + m; }
+  function loadBest(m) {
+    try { var b = JSON.parse(localStorage.getItem(bestKey(m))); if (b && typeof b.right === "number" && typeof b.ms === "number") return b; } catch (e) {}
+    return null;
+  }
+  function saveBest(m, b) { try { localStorage.setItem(bestKey(m), JSON.stringify(b)); } catch (e) {} }
+  function loadTotal() {
+    try { var t = JSON.parse(localStorage.getItem(KEY + "-total")); if (t && typeof t.solved === "number") return t; } catch (e) {}
+    return { solved: 0, right: 0 };
+  }
+  function addTotal(ok) {
+    var t = loadTotal(); t.solved++; if (ok) t.right++;
+    try { localStorage.setItem(KEY + "-total", JSON.stringify(t)); } catch (e) {}
+  }
+  function totalText() {
+    var t = loadTotal();
+    if (!t.solved) return "";
+    return "Du hast schon " + t.solved + " " + (t.solved === 1 ? NOUN : NOUN_PL) + " " + VERB + ", davon " + t.right + " richtig.";
+  }
+  function showBest() {
+    var tt = totalText();
+    $("total-start").textContent = tt; $("total-start").hidden = tt === "";
+    renderLevels("levels-start");
+    var box = $("bests"); box.innerHTML = "";
+    MODES.forEach(function (m) {
+      var b = loadBest(m.key);
+      if (!b) return;
+      var el = document.createElement("p"); el.className = "best";
+      el.textContent = "Bestes Ergebnis (" + m.title + "): " + b.right + " von " + TOTAL + " richtig in " + fmtTime(b.ms) + " Minuten";
+      box.appendChild(el);
+    });
+  }
+  /* Belohnung: gleiche Stufen wie im 1x1 Trainer
+     Stufe 1: 0 Fehler und unter 70 s  -> Feuerwerk  "Du bist ein Champion!"
+     Stufe 2: 0 Fehler, 70 s oder mehr  -> Krone      "Tolle Leistung! Alles richtig! Noch ein bisschen schneller."
+     Stufe 3: genau 1 Fehler             -> Daumen     "Übe fleissig weiter!"
+     Stufe 4: 2+ Fehler                  -> Keimling   "Übung macht den Meister!" */
+  function verdict(wrong, ms) {
+    if (wrong === 0 && ms < FAST_MS) return { level: "fire",  badge: "", text: "Du bist ein Champion!", fireworks: true };
+    if (wrong === 0) return { level: "crown", badge: "👑", text: "Tolle Leistung! Alles richtig! Noch ein bisschen schneller." };
+    if (wrong === 1) return { level: "thumb", badge: "👍", text: "Übe fleissig weiter!" };
+    return { level: "seed", badge: "🌱", text: "Übung macht den Meister!" };
+  }
+
+  /* Zähler je Stufe (wie oft Feuerwerk, Krone, Daumen, Keimling erreicht) */
+  var LEVELS = [
+    { key: "fire",  icon: "✨",         name: "Feuerwerk" },
+    { key: "crown", icon: "👑",   name: "Krone" },
+    { key: "thumb", icon: "👍",   name: "Daumen" },
+    { key: "seed",  icon: "🌱",   name: "Keimling" }
+  ];
+  function loadLevels() {
+    var l = { fire: 0, crown: 0, thumb: 0, seed: 0 };
+    try {
+      var s = JSON.parse(localStorage.getItem(KEY + "-levels"));
+      if (s) for (var k in l) if (typeof s[k] === "number") l[k] = s[k];
+    } catch (e) {}
+    return l;
+  }
+  function addLevel(key) {
+    var l = loadLevels();
+    if (key in l) l[key]++;
+    try { localStorage.setItem(KEY + "-levels", JSON.stringify(l)); } catch (e) {}
+  }
+  function renderLevels(id) {
+    var l = loadLevels(), any = false, html = "";
+    for (var i = 0; i < LEVELS.length; i++) {
+      var lv = LEVELS[i];
+      if (l[lv.key]) any = true;
+      html += '<div title="' + lv.name + '"><span class="ico" aria-hidden="true">' + lv.icon + "</span><b>" + l[lv.key] + "</b></div>";
+    }
+    $(id).innerHTML = html;
+    $(id).hidden = !any;
+  }
+
+  /* Kleines Feuerwerk (Canvas-Overlay, ca. 2.5 s, ohne externe Bibliothek) */
+  function fireworks() {
+    try {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      var c = document.createElement("canvas");
+      c.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:999";
+      document.body.appendChild(c);
+      var ctx = c.getContext("2d");
+      var dpr = window.devicePixelRatio || 1;
+      function size() { c.width = window.innerWidth * dpr; c.height = window.innerHeight * dpr; }
+      size();
+      var parts = [], colors = ["#ffd166", "#ff5d8f", "#06d6a0", "#4cc9f0", "#ff9f1c", "#ffffff", "#c77dff"];
+      function burst(x, y) {
+        var col = colors[Math.floor(Math.random() * colors.length)];
+        for (var i = 0; i < 90; i++) {
+          var a = Math.random() * Math.PI * 2, s = (2.5 + Math.random() * 5.5) * dpr;
+          parts.push({ x: x, y: y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 1,
+                       col: Math.random() < 0.7 ? col : "#ffffff", r: (2.5 + Math.random() * 3) * dpr });
+        }
+      }
+      var t0 = Date.now(), n = 0;
+      burst(0.5 * c.width, 0.25 * c.height);          // erste Salve sofort in der Mitte
+      var timer = setInterval(function () {
+        if (n++ < 8) burst((0.15 + Math.random() * 0.7) * c.width, (0.12 + Math.random() * 0.45) * c.height);
+        else clearInterval(timer);
+      }, 330);
+      function frame() {
+        ctx.clearRect(0, 0, c.width, c.height);
+        for (var i = parts.length - 1; i >= 0; i--) {
+          var p = parts[i];
+          p.x += p.vx; p.y += p.vy; p.vy += 0.05 * dpr; p.vx *= 0.985; p.vy *= 0.985; p.life -= 0.013;
+          if (p.life <= 0) { parts.splice(i, 1); continue; }
+          ctx.globalAlpha = Math.max(0, p.life);
+          ctx.fillStyle = p.col;
+          ctx.shadowBlur = 8 * dpr; ctx.shadowColor = p.col;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r * (0.6 + 0.4 * p.life), 0, Math.PI * 2); ctx.fill();
+        }
+        ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1;
+        if (Date.now() - t0 < 3600 || parts.length) requestAnimationFrame(frame);
+        else if (c.parentNode) c.parentNode.removeChild(c);
+      }
+      requestAnimationFrame(frame);
+    } catch (e) {}
+  }
+
+  /* ---------- Runde ---------- */
+  var mode = MODES[0].key, pool = [], tasks = [], idx = 0, answered = false, taskStart = 0, elapsed = 0;
+
+  function modeByKey(k) { for (var i = 0; i < MODES.length; i++) if (MODES[i].key === k) return MODES[i]; return MODES[0]; }
+
+  function newRound(m) {
+    mode = modeByKey(m).key;
+    var cats = modeByKey(m).cats;
+    pool = BIRDS.filter(function (b) { return cats.indexOf(b[4]) >= 0; });
+    tasks = shuffle(pool.slice()).slice(0, TOTAL);
+    idx = 0; elapsed = 0;
+    var dots = "";
+    for (var d = 0; d < TOTAL; d++) dots += '<span class="dot"></span>';
+    $("dots").innerHTML = dots;
+    show("quiz");
+    window.scrollTo(0, 0);
+    showTask();
+  }
+
+  function preload(i) { if (i < tasks.length) { var im = new Image(); im.src = imgUrl(tasks[i][1], 900); } }
+
+  function showTask() {
+    var t = tasks[idx];
+    answered = false;
+    $("count").textContent = NOUN + " " + (idx + 1) + " von " + TOTAL;
+    var dots = $("dots").children;
+    for (var i = 0; i < dots.length; i++) dots[i].classList.toggle("now", i === idx);
+
+    var img = $("photo");
+    $("loading").hidden = false;
+    $("loading").textContent = "Foto lädt …";
+    img.removeAttribute("src");
+    img.hidden = true;
+    img.parentNode.style.aspectRatio = "4 / 3";
+    img.onload = function () {
+      // Rahmen dem Foto anpassen: Querformat bis 4:3, Hochformat als Quadrat (nichts wird abgeschnitten)
+      var r = img.naturalWidth / img.naturalHeight;
+      img.parentNode.style.aspectRatio = String(Math.max(1, Math.min(4 / 3, r)));
+      $("loading").hidden = true; img.hidden = false;
+    };
+    img.onerror = function () { $("loading").textContent = "Foto konnte nicht geladen werden"; };
+    img.src = imgUrl(t[1], 900);
+    $("credit").innerHTML = "Foto: " + (t[2] ? esc(t[2]) + ", " : "") + esc(t[3]) +
+      ' · <a href="' + pageUrl(t[1]) + '" target="_blank" rel="noopener">Wikimedia Commons</a>';
+
+    var fb = $("feedback"); fb.className = "feedback"; fb.textContent = QUESTION;
+    $("btn-go").hidden = true;
+
+    // 8 falsche Namen aus demselben Pool
+    var others = shuffle(pool.filter(function (b) { return b[0] !== t[0]; })).slice(0, CHOICES - 1);
+    var names = shuffle(others.map(function (b) { return b[0]; }).concat([t[0]]));
+    var box = $("choices"); box.innerHTML = "";
+    names.forEach(function (n) {
+      var b = document.createElement("button"); b.type = "button"; b.textContent = labelOf(n); b.setAttribute("data-n", n);
+      if (n.length >= 16) b.className = "s";   // sehr lange Namen etwas kleiner
+      box.appendChild(b);
+    });
+    taskStart = Date.now();
+    preload(idx + 1);
+  }
+
+  function pick(btn) {
+    if (answered) return;
+    answered = true;
+    var t = tasks[idx], given = btn.getAttribute("data-n");
+    elapsed += Date.now() - taskStart;
+    t.given = given; t.ok = given === t[0];
+    addTotal(t.ok);
+    var all = $("choices").querySelectorAll("button");
+    for (var i = 0; i < all.length; i++) {
+      all[i].disabled = true;
+      if (all[i].getAttribute("data-n") === t[0]) all[i].classList.add("ok");
+      else if (all[i] === btn) all[i].classList.add("no");
+    }
+    var fb = $("feedback");
+    fb.className = "feedback " + (t.ok ? "ok" : "no");
+    fb.innerHTML = (t.ok ? "Richtig!" : "Das stimmt leider nicht.") + '<span class="solution">' + esc(t[0]) + "</span>";
+    var dot = $("dots").children[idx]; dot.classList.remove("now"); dot.classList.add(t.ok ? "ok" : "no");
+    var go = $("btn-go"); go.textContent = idx === TOTAL - 1 ? "Zum Ergebnis" : "Weiter"; go.hidden = false; go.focus();
+  }
+
+  function next() { if (idx < TOTAL - 1) { idx++; showTask(); } else finish(); }
+
+  function finish() {
+    var right = 0;
+    for (var i = 0; i < tasks.length; i++) if (tasks[i].ok) right++;
+    var wrong = TOTAL - right;
+    $("n-right").textContent = right; $("n-wrong").textContent = wrong; $("n-time").textContent = fmtTime(elapsed);
+    var v = verdict(wrong, elapsed);
+    addLevel(v.level);
+    $("badge").textContent = v.badge; $("badge").hidden = v.badge === "";
+    $("headline").textContent = v.text;
+    $("total").textContent = totalText();
+    renderLevels("levels-result");
+
+    var best = loadBest(mode);
+    var isRecord = !best || right > best.right || (right === best.right && elapsed < best.ms);
+    if (isRecord) saveBest(mode, { right: right, ms: elapsed });
+    $("record").textContent = isRecord && best ? "Das ist dein neues bestes Ergebnis!"
+      : (!isRecord ? "Dein bestes Ergebnis bisher: " + best.right + " richtig in " + fmtTime(best.ms) + " Minuten" : "");
+
+    var html = "";
+    tasks.forEach(function (t) {
+      var pic = '<img src="' + imgUrl(t[1], 160) + '" alt="">';
+      html += t.ok
+        ? '<li class="ok">' + pic + "<span>✓ " + esc(t[0]) + "</span></li>"
+        : '<li class="no">' + pic + "<span>✗ <s>" + esc(t.given || "–") + "</s> <b>" + esc(t[0]) + "</b></span></li>";
+    });
+    $("review").innerHTML = html;
+    show("result");
+    $("btn-again").focus();
+    window.scrollTo(0, 0);
+    if (v.fireworks) fireworks();
+  }
+
+  function stopRound() {
+    // Abbruch: nur beantwortete Aufgaben zählen, keine Bestleistung
+    tasks = tasks.slice(0, idx + (answered ? 1 : 0));
+    if (!tasks.length) { toMenu(); return; }
+    var right = 0; tasks.forEach(function (t) { if (t.ok) right++; });
+    $("n-right").textContent = right; $("n-wrong").textContent = tasks.length - right; $("n-time").textContent = fmtTime(elapsed);
+    $("badge").hidden = true; $("headline").textContent = "Übung beendet.";
+    $("record").textContent = ""; $("total").textContent = totalText();
+    renderLevels("levels-result");
+    var html = "";
+    tasks.forEach(function (t) {
+      var pic = '<img src="' + imgUrl(t[1], 160) + '" alt="">';
+      html += t.ok ? '<li class="ok">' + pic + "<span>✓ " + esc(t[0]) + "</span></li>"
+                   : '<li class="no">' + pic + "<span>✗ <s>" + esc(t.given || "–") + "</s> <b>" + esc(t[0]) + "</b></span></li>";
+    });
+    $("review").innerHTML = html;
+    show("result");
+    window.scrollTo(0, 0);
+  }
+
+  function toMenu() { showBest(); show("start"); }
+
+  MODES.forEach(function (m) {
+    var b = document.createElement("button"); b.type = "button"; b.className = "mode";
+    b.innerHTML = "<b>" + esc(m.title) + "</b><span>" + esc(m.sub) + "</span>";
+    b.addEventListener("click", function () { newRound(m.key); });
+    $("modes").appendChild(b);
+  });
+  $("btn-again").addEventListener("click", function () { newRound(mode); });
+  $("btn-menu").addEventListener("click", toMenu);
+  $("btn-stop").addEventListener("click", stopRound);
+  $("btn-go").addEventListener("click", next);
+  $("choices").addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (b && !b.disabled) pick(b);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    if (!screens.quiz.hidden && answered) { e.preventDefault(); next(); }
+    else if (!screens.result.hidden) { e.preventDefault(); newRound(mode); }
+  });
+
+  showBest();
+})();
+</script>
+</body>
+</html>
