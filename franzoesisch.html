@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>body{margin:0}[hidden]{display:none!important}</style>
+<title>Emils Französisch-Trainer</title>
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-title" content="Französisch">
+<meta name="theme-color" content="#1d3f6e">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout wie die anderen Trainer von Emils Lernseite: Häuschenpapier, schmale Spalte, grosse Tasten. */
+:root {
+  --paper: #f3f7fb;
+  --grid: #cfdcea;
+  --ink: #1d3f6e;
+  --ink-soft: #5b6f8c;
+  --surface: #ffffff;
+  --edge: #b7c7d8;
+  --key: #ffffff;
+  --key-press: #e3ecf5;
+  --primary: #1d3f6e;
+  --on-primary: #ffffff;
+  --right: #1f8a4c;
+  --right-bg: #dff3e6;
+  --wrong: #c8372d;
+  --wrong-bg: #fbe3e0;
+  --hint: #b26a00;
+  --orange: #e8742a;
+  --orange-bg: #fdebdc;
+  --green: #7a9a2a;
+  --green-bg: #eef3dc;
+  --font-display: "Baloo 2", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14243a; --grid: #223650; --ink: #f3f0e4; --ink-soft: #aebbcf;
+    --surface: #1c3049; --edge: #3b5473; --key: #223a57; --key-press: #2d4a6b;
+    --primary: #f3f0e4; --on-primary: #14243a;
+    --right: #8fe0a8; --right-bg: #23543c; --wrong: #ffa69c; --wrong-bg: #5a3230; --hint: #ffcc70;
+    --orange: #f08a45; --orange-bg: #4a3222; --green: #a6c34f; --green-bg: #33401d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14243a; --grid: #223650; --ink: #f3f0e4; --ink-soft: #aebbcf;
+  --surface: #1c3049; --edge: #3b5473; --key: #223a57; --key-press: #2d4a6b;
+  --primary: #f3f0e4; --on-primary: #14243a;
+  --right: #8fe0a8; --right-bg: #23543c; --wrong: #ffa69c; --wrong-bg: #5a3230; --hint: #ffcc70;
+  --orange: #f08a45; --orange-bg: #4a3222; --green: #a6c34f; --green-bg: #33401d;
+  color-scheme: dark;
+}
+
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.4;
+  padding-inline: 16px;
+  padding-block: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *::before, *::after { box-sizing: inherit; }
+main { width: 100%; max-width: 460px; display: flex; flex-direction: column; margin-block: auto; }
+section { display: flex; flex-direction: column; gap: 16px; }
+
+h1, h2 { font-family: var(--font-display); font-weight: 800; line-height: 1.05; margin: 0; text-wrap: balance; }
+h1 { font-size: 2.6rem; }
+h2 { font-size: 1.8rem; }
+p { margin: 0; }
+.soft { color: var(--ink-soft); }
+.back { font-weight: 700; color: var(--ink-soft); text-decoration: none; }
+.back:hover { text-decoration: underline; }
+a { color: inherit; }
+
+button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+.primary {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem;
+  background: var(--primary); color: var(--on-primary);
+  border: 0; border-radius: 16px; padding: 14px 20px; width: 100%;
+}
+.primary:disabled { opacity: 0.35; cursor: default; }
+.primary:active:not(:disabled) { transform: translateY(2px); }
+.ghost {
+  font-weight: 700; font-size: 1rem; background: transparent; color: var(--ink-soft);
+  border: 2px solid var(--edge); border-radius: 12px; padding: 10px 14px; width: 100%;
+}
+.ghost:active { transform: translateY(1px); }
+
+/* Listenauswahl: jede Unité ist ein Schalter, mehrere können an sein */
+.lists { display: flex; flex-direction: column; gap: 10px; }
+.list {
+  display: flex; align-items: center; gap: 12px; text-align: left;
+  background: var(--surface); color: var(--ink);
+  border: 3px solid var(--edge); border-radius: 16px; padding: 12px 14px; width: 100%;
+}
+.list.on { border-color: var(--primary); }
+/* Partie 2 (Vocabulaire plus) ist im Buch farbig hinterlegt: Dis donc! 5 grün, Dis donc! 6 orange */
+.list.p2.b6 { background: var(--orange-bg); }
+.list.p2.b6 .box { border-color: var(--orange); }
+.list.p2.b6.on { border-color: var(--orange); }
+.list.p2.b6.on .box { background: var(--orange); border-color: var(--orange); }
+.list.p2.b5 { background: var(--green-bg); }
+.list.p2.b5 .box { border-color: var(--green); }
+.list.p2.b5.on { border-color: var(--green); }
+.list.p2.b5.on .box { background: var(--green); border-color: var(--green); }
+.list .box {
+  width: 30px; height: 30px; flex: none; border-radius: 9px; border: 3px solid var(--edge);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--on-primary); font-size: 1.1rem;
+}
+.list.on .box { background: var(--primary); border-color: var(--primary); }
+.list b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; line-height: 1.15; }
+.list span { display: block; font-size: 0.85rem; color: var(--ink-soft); }
+.list .n { margin-left: auto; flex: none; font-family: var(--font-display); font-weight: 700; color: var(--ink-soft); font-size: 0.95rem; }
+.list:active { transform: translateY(1px); }
+.row { display: flex; gap: 10px; }
+.row .ghost { width: auto; flex: 1; }
+.best { background: var(--surface); border: 2px dashed var(--edge); border-radius: 14px; padding: 10px 14px; }
+
+/* Abfrage */
+.progress { display: flex; flex-direction: column; gap: 8px; }
+.dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; }
+.dot { height: 10px; border-radius: 5px; background: var(--surface); border: 2px solid var(--edge); }
+.dot.now { border-color: var(--ink); }
+.dot.ok { background: var(--right); border-color: var(--right); }
+.dot.no { background: var(--wrong); border-color: var(--wrong); }
+.card {
+  background: var(--surface); border: 3px solid var(--ink); border-radius: 16px; padding: 18px 16px 16px; text-align: center;
+}
+.card .from { font-size: 0.85rem; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+.card .word { font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1.15; margin-top: 4px; text-wrap: balance; }
+.card .word.long { font-size: 1.5rem; }
+.inputs { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.inputs label { display: flex; flex-direction: column; gap: 4px; font-weight: 700; font-size: 0.95rem; color: var(--ink-soft); }
+.inputs input {
+  font: inherit; font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; color: var(--ink);
+  background: var(--surface); border: 3px solid var(--ink); border-radius: 12px; padding: 8px 12px; width: 100%;
+}
+.inputs input:focus { outline: 3px solid var(--ink-soft); outline-offset: 2px; }
+.inputs input.ok { border-color: var(--right); background: var(--right-bg); }
+.inputs input.no { border-color: var(--wrong); background: var(--wrong-bg); }
+.accents { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.accents button {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1; min-width: 44px; padding: 8px 8px 6px;
+  background: var(--key); border: 2px solid var(--edge); border-bottom-width: 4px; border-radius: 10px;
+}
+.accents button:active:not(:disabled) { background: var(--key-press); transform: translateY(2px); border-bottom-width: 2px; }
+.accents button:disabled { opacity: 0.4; cursor: default; }
+
+.hint { text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: var(--hint); letter-spacing: 0.08em; min-height: 1.5em; }
+.hint small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.8rem; letter-spacing: 0; color: var(--ink-soft); }
+.tools { display: flex; gap: 10px; }
+.tools .ghost { width: auto; flex: 1; }
+.feedback { min-height: 2.6em; text-align: center; font-weight: 700; font-size: 1.1rem; }
+.feedback.ok { color: var(--right); }
+.feedback.no { color: var(--wrong); }
+.feedback.almost { color: var(--hint); }
+.feedback .solution { display: block; font-family: var(--font-display); font-size: 1.5rem; color: var(--ink); }
+
+/* Ergebnis */
+.verdict { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.badge { font-size: 5rem; line-height: 1.1; }
+.score { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.score div { background: var(--surface); border: 2px solid var(--edge); border-radius: 14px; padding: 10px 6px 8px; text-align: center; }
+.score b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.score span { font-size: 0.85rem; color: var(--ink-soft); }
+.score .ok b { color: var(--right); }
+.score .no b { color: var(--wrong); }
+.levels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.levels div { background: var(--surface); border: 2px solid var(--edge); border-radius: 14px; padding: 10px 4px 8px; text-align: center; }
+.levels .ico { display: block; font-size: 1.8rem; line-height: 1.2; }
+.levels b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.review { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 6px; font-size: 1rem; }
+.review li { display: flex; flex-direction: column; gap: 2px; padding: 6px 10px; border-radius: 10px; }
+.review li.ok { color: var(--right); }
+.review li.no { background: var(--wrong-bg); color: var(--wrong); }
+.review li.almost { background: var(--surface); color: var(--hint); }
+.review .de { font-size: 0.9rem; color: var(--ink-soft); }
+.review s { opacity: 0.8; }
+.review b { color: var(--ink); }
+
+@media (max-width: 360px) { h1 { font-size: 2.2rem; } .card .word { font-size: 1.7rem; } }
+</style>
+</head>
+<body>
+
+<main>
+  <section id="start">
+    <a class="back" href="index.html">← Emils Lernseite</a>
+    <h1>Emils Französisch-Trainer</h1>
+    <p>Wähle die Wortlisten, dann kommen 10 Wörter. Du siehst das deutsche Wort und schreibst es auf Französisch – mit Artikel (le, la, un, une).</p>
+    <div id="lists" class="lists"></div>
+    <div id="selrow" class="row">
+      <button id="btn-all" class="ghost" type="button">Alle auswählen</button>
+      <button id="btn-none" class="ghost" type="button">Keine</button>
+    </div>
+    <button id="btn-start" class="primary" type="button">Los geht's</button>
+    <div id="bests" class="lists"></div>
+    <p id="total-start" class="soft" hidden></p>
+    <div id="levels-start" class="levels" hidden></div>
+  </section>
+
+  <section id="quiz" hidden>
+    <div class="progress">
+      <p id="count" class="soft">Wort 1 von 10</p>
+      <div id="dots" class="dots" aria-hidden="true"></div>
+    </div>
+    <div class="card">
+      <div id="from" class="from"></div>
+      <div id="word" class="word"></div>
+    </div>
+    <div class="inputs">
+      <label><span id="lbl-fr">Französisch</span> <input id="in-fr" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" lang="fr"></label>
+      <label id="lbl2-wrap" hidden><span id="lbl-fr2">weiblich</span> <input id="in-fr2" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" lang="fr"></label>
+    </div>
+    <p id="hint" class="hint" aria-live="polite"></p>
+    <div id="accents" class="accents" aria-label="Sonderzeichen">
+      <button type="button" data-ch="é">é</button>
+      <button type="button" data-ch="è">è</button>
+      <button type="button" data-ch="ê">ê</button>
+      <button type="button" data-ch="à">à</button>
+      <button type="button" data-ch="ç">ç</button>
+      <button type="button" data-ch="ù">ù</button>
+      <button type="button" data-ch="û">û</button>
+      <button type="button" data-ch="î">î</button>
+      <button type="button" data-ch="œ">œ</button>
+      <button type="button" data-ch="'">'</button>
+    </div>
+    <p id="feedback" class="feedback" aria-live="polite"></p>
+    <button id="btn-check" class="primary" type="button" disabled>Prüfen</button>
+    <button id="btn-go" class="primary" type="button" hidden>Weiter</button>
+    <div class="tools">
+      <button id="btn-help" class="ghost" type="button">💡 Hilfe</button>
+      <button id="btn-stop" class="ghost" type="button">Abbrechen</button>
+    </div>
+  </section>
+
+  <section id="result" hidden>
+    <div class="verdict">
+      <div id="badge" class="badge" aria-hidden="true" hidden></div>
+      <h2 id="headline">Geschafft!</h2>
+    </div>
+    <div class="score">
+      <div class="ok"><b id="n-right">0</b><span>richtig</span></div>
+      <div class="no"><b id="n-wrong">0</b><span>falsch</span></div>
+      <div><b id="n-time">0:00</b><span>Zeit</span></div>
+    </div>
+    <p id="record" class="soft"></p>
+    <p id="total" class="soft"></p>
+    <div id="levels-result" class="levels" hidden></div>
+    <ul id="review" class="review"></ul>
+    <button id="btn-again" class="primary" type="button">Noch einmal</button>
+    <button id="btn-menu" class="ghost" type="button">Zur Auswahl</button>
+  </section>
+</main>
+
+<script>
+(function () {
+  // Wortlisten: key, title, sub, words = [[Deutsch, Französisch, (weitere Antworten | "!")], ...]
+  var ALL_LISTS = [{"key":"u1","book":5,"title":"Dis donc! 5 – Unité 1: Schule, Wochentage","sub":"Schulsachen, Schulfächer, Wochentage","words":[["Toll, es ist Schulanfang!","Chouette, c'est la rentrée!","!"],["Oje, es ist Schulanfang!","Zut, c'est la rentrée!","!"],["das Buch","le livre"],["das Lineal","la règle"],["der Ordner","le classeur"],["das Heft","le cahier"],["der Bleistift","le crayon"],["der Kugelschreiber","le stylo"],["der Gummi","la gomme"],["die Wandtafel","le tableau noir"],["das Etui","la trousse"],["der Tisch","la table"],["der Stuhl","la chaise"],["das Schulfach","la matière scolaire"],["Deutsch","l'allemand (m)"],["Französisch","le français"],["Englisch","l'anglais (m)"],["Mathematik","les maths, les mathématiques (f pl)"],["die Wochentage","les jours (m) de la semaine"],["Montag","lundi"],["Dienstag","mardi"],["Mittwoch","mercredi"],["Donnerstag","jeudi"],["Freitag","vendredi"],["Samstag","samedi"],["Sonntag","dimanche"],["eine Schule","une école"],["rechnen","calculer"],["zeichnen","dessiner"],["singen","chanter"],["experimentieren","expérimenter"],["Französisch sprechen","parler français"]]},{"key":"u1p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 1, Partie 2: Schulfächer, Tätigkeiten","sub":"Schultasche, weitere Fächer, Tätigkeiten","words":[["die Schultasche","le cartable"],["eine Agenda","un agenda"],["die Schere","les ciseaux (m pl)"],["das bildnerische Gestalten, die Zeichnung","le dessin"],["die Geografie","la géo, la géographie"],["die Geschichte","l'histoire (f)"],["das Turnen","la gym, la gymnastique"],["die Naturwissenschaften","les sciences (f pl) de la nature",["les sciences"]],["die Musik","la musique"],["Handarbeit und Werken","ACM (activités créatrices manuelles)",["les ACM","activités créatrices manuelles","les activités créatrices manuelles"]],["Englisch sprechen","parler anglais"],["das Ausland erkunden","explorer l'étranger"],["ein Museum besuchen","visiter un musée"],["stricken","tricoter"],["ein Gedicht aufsagen","réciter un poème"],["basteln","bricoler"],["springen, hüpfen","sauter"],["klettern","grimper"]]},{"key":"u2","book":5,"title":"Dis donc! 5 – Unité 2: Familie, Steckbrief","sub":"Familie, c'est / ce sont, Steckbrief","words":[["die Familie","la famille"],["ein Kind","un/une enfant"],["die Mutter","la mère, la maman"],["der Vater","le père, le papa"],["die Eltern","les parents (m pl)"],["die Schwester","la sœur",["la soeur"]],["der Bruder","le frère"],["die Grossmutter","la grand-mère"],["der Grossvater","le grand-père"],["die Grosseltern","les grands-parents (m pl)"],["die Tante","la tante"],["ein Onkel","un oncle"],["die Cousine","la cousine"],["der Cousin","le cousin"],["das Baby, das Kleinkind","le bébé"],["die Tochter, das Mädchen","la fille"],["der Sohn","le fils"],["hier ist, da ist","voici, voilà"],["er ist, sie ist","il est, elle est"],["Lionel ist der Bruder von Nathalie.","Lionel est le frère de Nathalie."],["sie sind","ils sont, elles sont"],["das ist","c'est"],["Das ist meine Familie.","C'est ma famille."],["das sind","ce sont"],["Das sind meine Grosseltern.","Ce sont mes grands-parents."],["wer?","qui?"],["er heisst, sie heisst","il s'appelle, elle s'appelle"],["sie heissen","ils s'appellent, elles s'appellent"],["der Steckbrief","la fiche personnelle"],["der Name","le nom"],["der Vorname","le prénom"],["die Sprache","la langue"],["Ich spreche Deutsch, Französisch und Englisch.","Je parle allemand, français et anglais.","!"]]},{"key":"u2p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 2, Partie 2: Familie, Nationalitäten","sub":"Enkel, Haustiere, Steckbrief, Nationalitäten","words":[["ein Schauspieler","un acteur"],["der Stummfilm","le cinéma muet"],["verheiratet","marié/mariée"],["elf","onze"],["der Enkel","le petit-fils"],["die Enkelin","la petite-fille"],["der Hund","le chien"],["die Katze","le chat"],["das Familienmitglied","le membre de la famille"],["ein Stammbaum","un arbre généalogique"],["das Geschlecht","le sexe"],["das Alter","l'âge (m)"],["eine Adresse","une adresse"],["das Land","le pays"],["die Unterschrift","la signature"],["Niederländisch","le néerlandais"],["Schwedisch","le suédois"],["Italienisch","l'italien (m)"],["Spanisch","l'espagnol (m)"],["die Fahne","le drapeau"]]},{"key":"u3","book":5,"title":"Dis donc! 5 – Unité 3: Freizeit, Hobbys","sub":"Freizeit, Hobbys, Sport und Musik","words":[["die Freizeitbeschäftigung","le loisir"],["ein Computer","un ordinateur"],["der Fernseher","la télé"],["die Spielkonsole","la console"],["lesen","lire"],["Fussball (Spiel), Fussball spielen","le foot, faire du foot"],["das Velo, das Fahrrad","le vélo"],["der Ski","le ski"],["das Unihockey, Unihockey spielen","l'unihockey (m), faire de l'unihockey"],["tanzen","danser"],["schwimmen","nager"],["die Gitarre, Gitarre spielen","la guitare, jouer de la guitare"],["die Flöte","la flûte"],["das Klavier, Klavier spielen","le piano, jouer du piano"],["draussen spielen","jouer dehors"],["ein Tier, die Tiere","un animal, les animaux (m pl)"],["das Basteln","le bricolage"],["Musik hören","écouter de la musique"],["kochen","faire la cuisine"],["shoppen","faire du shopping"],["Freunde/Freundinnen treffen","rencontrer des amis/amies"],["lieben, ich liebe","aimer, j'aime"],["sehr gerne haben, ich habe sehr gerne","adorer, j'adore"],["meine Leidenschaft ist …","ma passion, c'est…","!"],["mein Hobby ist …","mon hobby, c'est…","!"],["ich bin Fan von …","je suis fan de…"],["die Zahl","le nombre"],["ein Schüler, eine Schülerin","un/une élève"],["der Knabe","le garçon"],["das Mädchen, die Tochter","la fille"]]},{"key":"u3p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 3, Partie 2: Hobbys, Sport","sub":"Medien, Sportarten, Instrumente, Lieblingssport","words":[["die Medien","les médias (m pl)"],["der Comic","la BD (la bande dessinée)",["la BD","la bande dessinée"]],["das Reiten, reiten","l'équitation (f), faire de l'équitation"],["die Akrobatik, Akrobatik machen","les acrobaties (f pl), faire des acrobaties"],["das Klettern","la grimpe"],["das Tischtennis","le tennis de table"],["das Eishockey","le hockey sur glace"],["das Schlagzeug","la batterie"],["die Geige, die Violine","le violon"],["der Zirkus","le cirque"],["der Modellbau","la construction"],["das Fischen, fischen","la pêche, pêcher"],["das Schachspiel, Schach spielen","les échecs (m pl), jouer aux échecs"],["das Theater, Theater spielen","le théâtre, jouer du théâtre"],["mit meinen Freunden sein","être avec mes potes"],["Kinder hüten","garder des enfants"],["ich liebe sehr …","j'aime beaucoup…"],["mein Lieblingssport ist …","mon sport favori, c'est…","!"],["meine Hobbys sind …","mes hobbies, ce sont…","!"],["hassen, ich hasse","détester, je déteste"]]},{"key":"u4","book":5,"title":"Dis donc! 5 – Unité 4: Zutaten, Gesicht","sub":"Früchte und Gemüse, Gesichtsteile, Anweisungen (Pique, Fixe, Coupe …)","words":[["eine Zutat","un ingrédient"],["eine Ananas","un ananas"],["die grüne Traube","le raisin vert"],["die blaue Traube","le raisin bleu"],["die Erdbeere","la fraise"],["der weisse Champignon","le champignon blanc"],["die Gurkenscheibe","la rondelle de concombre"],["die Karotte","la carotte"],["die Birne","la poire"],["das Ananasblatt","la feuille d'ananas"],["die (Kirsch-)Tomate","la tomate (cerise)"],["ein wenig Petersilie","un peu de persil"],["das Gesicht","le visage"],["ein Ohr","une oreille"],["die Augen, ein Auge","les yeux (m pl), un œil",["les yeux, un oeil","un oeil"]],["die Haare","les cheveux (m pl)"],["der Kopf","la tête"],["die Nase","le nez"],["der Mund","la bouche"],["die Zitronenscheibe","la rondelle de citron"],["Für die Nase nehme ich eine Karotte.","Pour le nez, je prends une carotte.","!"],["Was ist das?","C'est quoi?"],["die Banane","la banane"],["die Nudeln","les nouilles (f pl)"],["Spiesse eine Traube auf.","Pique un raisin."],["Befestige die Traube an der Birne.","Fixe le raisin sur la poire."],["Schneide (halbiere) die Ananas.","Coupe l'ananas (en deux)."],["Stelle / Lege die Erdbeere auf den Teller.","Pose la fraise sur l'assiette."],["Nimm eine Birne für den Körper.","Prends une poire pour le corps."],["Du schneidest. Schneide!","Tu coupes. Coupe."],["Ihr schneidet. Schneidet!","Vous coupez. Coupez."],["ein Alphabet","un alphabet"],["die Suppe","la soupe"],["der Buchstabe","la lettre"]]},{"key":"u4p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 4, Partie 2: Zutaten, Basteln","sub":"Tiere aus Gemüse basteln: Zutaten, Anweisungen","words":[["die Maus","la souris"],["das Auto","la voiture"],["die Raupe","la chenille"],["der Igel","le hérisson"],["die halbe Gurkenscheibe","la demi-rondelle de concombre"],["der Schnittlauchhalm","la tige de ciboulette"],["die Gewürznelke","le clou de girofle"],["die Johannisbeere","la groseille (rouge)"],["die Rosine (getrocknete Traube)","le raisin sec"],["die Gesichtsteile","les parties du visage"],["das Brokkoliröschen","le bouquet de brocoli"],["das Stück Käse","le morceau de fromage"],["das Stück Wassermelone","le morceau de pastèque"],["Pflanze Zahnstocher in den Rücken ein.","Plante des cure-dents sur le dos."],["Befestige die Traube mithilfe eines Zahnstochers.","Fixe le raisin à l'aide d'un cure-dent."],["die Pfote","la patte"],["Stecke die Blätter in die Birne.","Insère les feuilles dans la poire."],["für den Schwanz","pour la queue"],["Ziehe Trauben auf einen Metallfaden auf.","Enfile des raisins sur un fil de métal."],["Nimm die blaue Knete.","Prends la pâte bleue."],["Nimm die grüne Knete.","Prends la pâte verte."],["Nimm die rote Knete.","Prends la pâte rouge."],["Forme eine grosse Kugel für den Körper.","Forme une grande boule pour le corps."],["Forme eine kleine Kugel für den Körper.","Forme une petite boule pour le corps."],["das Brot","le pain"],["der Apfel","la pomme"],["die Kartoffel","la pomme de terre"]]},{"key":"u5","book":5,"title":"Dis donc! 5 – Unité 5: Tiere, Farben","sub":"Tiere, Steckbrief eines Tiers, Zahlen 100/1000, Farben","words":[["der Wolf","le loup"],["der Igel","le hérisson"],["das Murmeltier","la marmotte"],["eine Biene","une abeille"],["ein Wohnort","une adresse"],["die Grösse","la taille"],["das Gewicht","le poids"],["die Nahrung","la nourriture"],["hundert","cent"],["tausend","mille"],["die Katze","le chat"],["das Pferd","le cheval"],["das Schwein","le cochon"],["eine Schnecke","un escargot"],["das Kaninchen","le lapin"],["der Papagei","le perroquet"],["der Fisch","le poisson"],["die Kuh","la vache"],["die Farbe","la couleur"],["weiss","blanc/blanche"],["grau","gris/grise"],["schwarz","noir/noire"],["braun","brun/brune"],["braun (unveränderlich)","marron"],["blau","bleu/bleue"],["grün","vert/verte"],["rot","rouge"],["gelb","jaune"],["rosa","rose"],["violett","violet/violette"],["orange","orange"],["Er / Sie lebt in den Bergen Europas.","Il/Elle vit dans les montagnes en Europe."],["Er / Sie frisst (isst) Früchte.","Il/Elle mange des fruits."],["Er / Sie misst 45 bis 60 Zentimeter.","Il/Elle mesure de 45 à 60 centimètres."],["Er / Sie wiegt zwischen 5 und 10 Kilogramm.","Il/Elle pèse entre 5 et 10 kilos."],["Er / Sie hat einen Schnabel.","Il/Elle a un bec."],["Er ist grau und braun.","Il est gris et brun."],["Sie ist grau und braun.","Elle est grise et brune."],["Welche Farbe hat das Schwein?","De quelle couleur est le cochon?"]]},{"key":"u5p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 5, Partie 2: Tiere, Eigenschaften","sub":"Jäger, Angsthase, Merkmale, weitere Tiere","words":[["der Jäger","le chasseur"],["der Angsthase","le trouillard"],["der Nichtstuer, der Faulpelz","le fainéant, la fainéante"],["das Arbeitstier","le bosseur, la bosseuse"],["das Kennzeichen, das Merkmal","la caractéristique"],["ein Aussehen","une apparence physique"],["der Wurf (Anzahl Jungtiere bei einer Geburt)","la portée"],["die Lebensdauer","la durée de vie"],["der Hund","le chien"],["ein Elefant","un éléphant"],["das Schaf","le mouton"],["der Pinguin","le pingouin"],["die Eule","la chouette"],["die Schlange","le serpent"],["der Löwe","le lion"],["der Hahn","le coq"],["die Ratte","le rat"],["der Affe","le singe"]]},{"key":"u6","book":5,"title":"Dis donc! 5 – Unité 6: Adjektive, Kleider","sub":"Stadt und Bauwerk, gross/klein/rund …, Kleidungsstücke","words":[["die Stadt","la ville"],["das Land","le pays"],["das Bauwerk","le monument"],["der Turm","la tour"],["gross","grand/grande"],["klein","petit/petite"],["rund","rond/ronde"],["rechteckig","rectangulaire"],["kurz","court/courte"],["lang","long/longue"],["warm, heiss","chaud/chaude"],["kalt","froid/froide"],["Der Mann ist gross.","Le monsieur est grand."],["Die Frau ist gross.","La dame est grande."],["Die Kinder sind gross.","Les enfants sont grands."],["Die Knaben sind gross.","Les garçons sont grands."],["Die Mädchen sind gross.","Les filles sont grandes."],["das Kleidungsstück","le vêtement"],["das T-Shirt","le tee-shirt"],["der Pullover","le pull"],["das Hemd","la chemise"],["die Hose","le pantalon"],["die Shorts, die kurze Hose","le short"],["das Kleid","la robe"],["der Rock, der Jupe","la jupe"],["die Socke","la chaussette"],["der (Halb-)Schuh","la chaussure"],["die Jacke","la veste"],["der Hut","le chapeau"],["die (Schirm-)Mütze","la casquette"],["der Mantel","le manteau"],["die Uhr","la montre"],["die Krawatte","la cravate"],["Meine Figur trägt eine rote Hose.","Mon personnage porte un pantalon rouge."],["Wer ist das?","C'est qui?"],["Was trägt dein Bauwerk?","Que porte ton monument?"]]},{"key":"u6p","book":5,"part2":true,"title":"Dis donc! 5 – Unité 6, Partie 2: Kleider, Gebäude","sub":"Wolkenkratzer, Höhe, Stockwerk, weitere Kleider und Accessoires","words":[["der Wolkenkratzer","le gratte-ciel"],["die Höhe","la hauteur"],["ein Stockwerk","un étage"],["die Treppenstufe","la marche de l'escalier"],["ein Jahr","un an, une année"],["weiss","blanc/blanche"],["violett","violet/violette"],["der Stiefel","la botte"],["ein Schal","une écharpe"],["der Schirm","le parapluie"],["die Sonnenbrille","les lunettes de soleil (f pl)"],["die Handtasche","le sac à main"],["die Halskette","le collier"],["der Gürtel","la ceinture"],["der Bikini","le bikini"],["die Strumpfhose","le collant"]]},{"key":"n1","book":6,"title":"Dis donc! 6 – Unité 1: Orte, Fragewörter","sub":"Orte, Fragewörter, Präpositionen, Tageszeiten","words":[["die Hausaufgaben machen","faire les devoirs (m pl)"],["zu Hause","à la maison"],["in der Schule","à l'école"],["auf einer Insel","sur une île"],["in der Métro, in der U-Bahn","dans le métro"],["draussen","dehors"],["im Wasser","dans l'eau"],["auf dem Tabletcomputer","sur la tablette (numérique)"],["Wie?","Comment?"],["Wo?","Où?"],["Wann?","Quand?"],["Was?","Quoi?"],["Was machst du?","Qu'est-ce que tu fais?"],["Wer?","Qui?"],["auf","sur"],["unter","sous"],["in","dans"],["in der Mitte von","au milieu de"],["in, bei, zu, an","à"],["vor","devant"],["hinter","derrière"],["zwischen … und","entre … et",["entre et","entre ... et"]],["schlafen","dormir"],["lesen","lire"],["am Meer","à la mer"],["unter einem Baum","sous un arbre"],["mit meinem Freund / meiner Freundin","avec mon ami/amie"],["alleine","seul/seule"],["der Morgen, am Morgen","le matin"],["am Mittag","à midi"],["der Nachmittag, am Nachmittag","l'après-midi (m/f)"],["der Abend, am Abend","le soir"],["die Nacht, in der Nacht","la nuit"],["das Wochenende, am Wochenende","le week-end",["le weekend"]],["die Welt","le monde"],["überall","partout"]]},{"key":"n1p","book":6,"part2":true,"title":"Dis donc! 6 – Unité 1, Partie 2: Orte, Gründe","sub":"Orte, Pourquoi?, pour … / parce que","words":[["unter einer Kokospalme","sous un cocotier"],["der Ort","le lieu"],["auf dem Gang, im Flur","dans le couloir"],["auf dem Sand","sur le sable"],["im Dorf","dans le village"],["um 19 Uhr","à 19 heures"],["Warum?","Pourquoi?"],["Welcher? / Welche?","Quel?/Quelle?"],["nachdenken","réfléchir"],["in einer Hängematte","dans un hamac"],["auf einem grossen, bequemen Stuhl","sur une grande chaise confortable"],["arbeiten","travailler"],["um motiviert zu sein","pour être motivé/motivée"],["um konzentriert zu bleiben","pour rester concentré/concentrée"],["um Hilfe zu haben / zu bekommen","pour avoir de l'aide"],["weil es lustig ist","parce que c'est amusant"],["um am Abend frei zu sein","pour être libre le soir"],["um danach frei zu sein","pour être libre après"],["um Hilfe von meinen Eltern zu haben","pour avoir l'aide de mes parents"],["um eine angenehme Woche zu haben","pour avoir une semaine agréable"]]},{"key":"n2","book":6,"title":"Dis donc! 6 – Unité 2: Haus, Möbel","sub":"Haus und Zimmer, Stockwerke, Präpositionen, Möbel","words":[["das Haus","la maison"],["eine Wohnung","un appartement"],["die Küche","la cuisine"],["das Wohnzimmer","le salon"],["das Zimmer, das Schlafzimmer","la chambre"],["die Toilette, das WC","les toilettes (f pl), le WC"],["das Badezimmer","la salle de bains"],["ein Stockwerk","un étage"],["das Erdgeschoss","le rez-de-chaussée"],["das Untergeschoss","le sous-sol"],["Ich wohne im ersten Stock.","J'habite au premier étage."],["Du wohnst im zweiten Stock.","Tu habites au deuxième étage."],["Er wohnt im dritten Stock.","Il habite au troisième étage."],["arbeiten","travailler"],["Ich arbeite in der Apotheke.","Je travaille à la pharmacie."],["auf","sur"],["unter","sous"],["in","dans"],["in der Mitte von","au milieu de"],["in, an, zu, bei","à"],["vor","devant"],["hinter","derrière"],["zwischen … und","entre … et",["entre et","entre ... et"]],["oben","en haut"],["unten","en bas"],["die Türe","la porte"],["das Fenster","la fenêtre"],["das Bett","le lit"],["der Tisch","la table"],["der Stuhl","la chaise"],["ein Gestell","une étagère"],["ein Schrank","une armoire"],["der Sessel","le fauteuil"],["der Teppich","le tapis"],["die Kommode","la commode"],["die Pflanze","la plante"],["ein Poster","une affiche"],["links von der Lampe","à gauche de la lampe"],["links vom Klavier","à gauche du piano"],["rechts vom Gestell","à droite de l'étagère"]]},{"key":"n2p","book":6,"part2":true,"title":"Dis donc! 6 – Unité 2, Partie 2: Zimmer, Fragen","sub":"weitere Zimmer, Fragen zum Haus, Möbel","words":[["das Wohnzimmer","le séjour (le salon)",["le séjour","le salon"]],["das Esszimmer","la salle à manger"],["das Gästezimmer","la chambre d'amis"],["die Waschküche","la buanderie"],["der Estrich","le grenier"],["Wie viele Zimmer hat dein Haus?","Combien de pièces a ta maison?"],["Wer wohnt mit dir?","Qui habite avec toi?"],["Wo ist dein Zimmer?","Où est ta chambre?"],["Auf welchem Stockwerk ist das Gästezimmer?","À quel étage est la chambre d'amis?"],["der Vorhang","le rideau"],["das Büchergestell","la bibliothèque"],["der Papierkorb","la corbeille à papier"]]},{"key":"n3","book":6,"current":true,"title":"Dis donc! 6 – Unité 3: Körper, Verben","sub":"Körperteile und Bewegungen, sportlich, être/avoir, Verneinung, il faut","words":[["sportlich","sportif/sportive"],["neu","nouveau/nouvelle"],["Menschen mit Behinderungen","les personnes handicapées"],["rollen, fahren","rouler"],["helfen","aider"],["schauen","regarder"],["sprechen","parler"],["denken","penser"],["essen","manger"],["finden","trouver"],["zeigen","montrer"],["vergessen","oublier"],["gehen","aller"],["wie die anderen","comme les autres"],["ich kann, ich darf","je peux"],["alle","tout le monde"],["das Bein","la jambe"],["der Arm","le bras"],["ein Vogel","un oiseau"],["sein","être"],["haben","avoir"],["der Durst","la soif"],["der Hunger","la faim"],["Ich habe Hunger.","J'ai faim."],["rechts","droit/droite"],["links","gauche"],["der Fuss","le pied"],["mit dem linken Fuss stampfen","taper du pied gauche"],["der Finger","le doigt"],["mit den Fingern schnippen","claquer des doigts"],["die Hand","la main"],["in die Hände klatschen","frapper dans les mains"],["die Brust","la poitrine"],["mit der rechten Hand auf die Brust schlagen","taper avec la main droite sur la poitrine"],["der Oberschenkel","la cuisse"],["mit der linken Hand auf den linken Oberschenkel schlagen","frapper la main gauche sur la cuisse gauche"],["die Wange","la joue"],["auf die Wangen schlagen","frapper sur les joues"],["nicht","ne … pas"],["nicht mehr","ne … plus"],["nichts","ne … rien"],["nie","ne … jamais"],["niemand, niemanden","ne … personne"],["Du spielst nicht.","Tu ne joues pas."],["es gibt, es hat","il y a"],["man muss","il faut"],["Man muss zur Schule gehen.","Il faut aller à l'école."],["Man muss Französisch lernen.","Il faut apprendre le français."]]},{"key":"n3p","book":6,"part2":true,"title":"Dis donc! 6 – Unité 3, Partie 2: Training, Eigenschaften","sub":"Training, Rollstuhl, schwierig/kräftig/fähig, Verben","words":[["ein Training","un entraînement"],["die Stirn","le front"],["die Leute","les gens (m/f pl)"],["der Rollstuhl","le fauteuil roulant"],["die Erkältung, der Schnupfen","le rhume"],["einmal, zweimal","une fois, deux fois","!"],["auf der Strasse","dans la rue"],["schwierig","difficile"],["anders, verschieden","différent/différente"],["kräftig, stark","costaud/costaude"],["fähig","capable"],["behandeln","traiter"],["überqueren","traverser"],["sich vorstellen","imaginer"],["funktionieren","fonctionner"],["fliegen","voler"],["hinaufsteigen, hinaufgehen","monter"],["verstehen","comprendre"],["die Bewegung","le mouvement"],["bewegen","bouger"]]},{"key":"n4","book":6,"title":"Dis donc! 6 – Unité 4: Essen, Restaurant","sub":"Speisen und Getränke, im Restaurant bestellen","words":[["das typische Gericht","le plat typique"],["die Milch","le lait"],["der Zug","le train"],["das Auto","la voiture"],["der Strand","la plage"],["eine Vorspeise","une entrée"],["der grüne Salat","la salade verte"],["die Gemüsesuppe","la soupe aux légumes"],["der Teigboden mit Belag (salzig oder süss)","la tarte"],["der Rohschinken","le jambon cru"],["der Hauptgang, die Hauptgänge","le plat principal, les plats principaux"],["der Reis","le riz"],["die Nudeln","les nouilles (f pl)"],["die Pommes frites","les frites (f pl)"],["der Kartoffelstock","la purée de pommes de terre"],["ein Schnitzel","une escalope"],["das Hacksteak","le steak haché"],["das Dessert","le dessert"],["der Pfannkuchen, die Crêpe","la crêpe"],["der Schokoladenkuchen","le gâteau au chocolat"],["das Eis","la glace"],["das Getränk","la boisson"],["ein Mineralwasser","une eau minérale"],["der Kaffee","le café"],["der Eistee","le thé froid"],["Haben Sie einen Tisch für zwei Personen?","Vous avez une table pour deux personnes?"],["Hier ist die Speisekarte.","Voici le menu."],["Als Vorspeise haben wir …","Comme entrée, nous avons…","!"],["Als Hauptgang haben wir …","Comme plat principal, nous avons…","!"],["Als Dessert haben wir …","Comme dessert, nous avons…","!"],["bestellen","commander"],["Was nehmen Sie?","Qu'est-ce que vous prenez?"],["ich nehme","je prends"],["für mich","pour moi"],["bitte","s'il te plaît, s'il vous plaît"],["Ein / Eine …, was ist das?","Un…, qu'est-ce que c'est?",["Une…, qu'est-ce que c'est?"],"!"],["Ich empfehle den Tagesteller.","Je recommande le plat du jour."],["Es war lecker.","C'était délicieux!"],["eine Rechnung","une addition"]]},{"key":"n4p","book":6,"part2":true,"title":"Dis donc! 6 – Unité 4, Partie 2: Fisch, Restaurant","sub":"weitere Speisen, Sätze im Restaurant","words":[["der Fisch","le poisson"],["die Zucchini","la courgette"],["die Reise","le voyage"],["das Salz","le sel"],["die Muscheln","les moules (f pl)"],["der Wolfsbarsch","le loup de mer"],["das Rindsfilet","le filet de bœuf",["le filet de boeuf"]],["ein Käseteller","une assiette de fromage"],["die gebrannte Vanillecrème","la crème brûlée à la vanille"],["eine Zutat","un ingrédient"],["der Weisswein","le vin blanc"],["der Rotwein","le vin rouge"],["ein Tee","un thé"],["die Flasche","la bouteille"],["das Glas","le verre"],["Folgen Sie mir.","Suivez-moi."],["Nehmen Sie Platz.","Installez-vous."],["Das ist eine Spezialität von …","C'est une spécialité de…"],["Haben Sie ausgesucht?","Vous avez choisi?"],["Was möchten Sie trinken?","Qu'est-ce que vous aimeriez boire?"],["ich hätte gerne","j'aimerais"],["Was hat es in diesem Gericht?","Qu'est-ce qu'il y a dans ce plat?"],["Was empfehlen Sie?","Qu'est-ce que vous recommandez?"],["Was ist die Spezialität des Chefs?","Quelle est la spécialité du chef?"],["War es gut?","Ça a été?"],["Nein, nicht besonders!","Non, pas trop!"]]},{"key":"tr","hidden":true,"title":"Les moyens de transport","sub":"Verkehrsmittel, Zahlen 13–20, slowUp","words":[["das Fahrrad","le vélo"],["die Inlineskates","les rollers (m pl)"],["das Trottinett","la trottinette"],["der Zug","le train"],["das Auto","la voiture"],["der Bus","le bus"],["das Schiff","le bateau"],["das Flugzeug","l'avion (m)"],["das Tram","le tram"],["das Motorrad","la moto"],["zu Fuss","à pied"],["Das macht …","Ça fait …",["ça fait"]],["dreizehn","treize"],["vierzehn","quatorze"],["fünfzehn","quinze"],["sechzehn","seize"],["siebzehn","dix-sept"],["achtzehn","dix-huit"],["neunzehn","dix-neuf"],["zwanzig","vingt"],["die Strecke, die Runde","le parcours"],["gehen (nach, an)","aller (à)"],["fahren, rollen","rouler"],["du","tu"],["wir","nous"],["ihr","vous"],["sie (männlich, Mehrzahl)","ils"],["sie (weiblich, Mehrzahl)","elles"],["bis","jusqu'à"],["einverstanden","d'accord"],["bis bald","à bientôt"],["hallo, tschüss","salut"]]},{"key":"pb","hidden":true,"title":"La recette du Pan Bagnat","sub":"Essen, Kühlschrank, Rezept","words":[["das Rezept","la recette"],["das Sandwich","le sandwich"],["das Brot","le pain"],["die Tomate","la tomate"],["die Olive","l'olive (f)"],["der Thunfisch","le thon"],["das Salz","le sel"],["der Pfeffer","le poivre"],["das Öl","l'huile (f)"],["das Basilikum","le basilic"],["der Finger","le doigt"],["essen","manger"],["kalt","froid"],["die Gurke","le concombre"],["der Käse","le fromage"],["der Schinken","le jambon"],["die Butter","le beurre"],["die Mayonnaise","la mayonnaise"],["der Kühlschrank","le frigo"],["vorbereiten, zubereiten","préparer"],["hinzufügen","ajouter"],["schneiden","couper"],["es hat, es gibt","il y a"],["Was hat es …?","Qu'est-ce qu'il y a …?",["qu'est-ce qu'il y a"]],["ein wenig","un peu de"],["viel","beaucoup de"],["eine Tube","un tube de"],["eine Scheibe","une tranche de"],["ein Kilo","un kilo de"],["die Zutat","l'ingrédient (m)"],["zweite","deuxième"],["darauf","dessus"],["lege","mets"],["guten Appetit","bon appétit"]]}];
+  var LISTS = ALL_LISTS.filter(function (l) { return !l.hidden; });   // versteckte Listen sind noch nicht durchgesehen
+  // Reihenfolge: neuestes Buch und höchste Unité zuoberst, Dis donc! 5 Unité 1 zuunterst; Partie 1 vor Partie 2
+  LISTS.sort(function (a, b) {
+    function u(l) { var m = /Unité (\d+)/.exec(l.title); return m ? +m[1] : 0; }
+    return (b.book || 0) - (a.book || 0) || u(b) - u(a) || (a.part2 ? 1 : 0) - (b.part2 ? 1 : 0);
+  });
+  var TOTAL = 10;
+  var KEY = "franz";
+  var FAST_MS = 300000;   // 10 Wörter fehlerfrei in unter 5 Minuten getippt = Feuerwerk (Schreiben braucht länger als Auswählen)
+  var $ = function (id) { return document.getElementById(id); };
+  var screens = { start: $("start"), quiz: $("quiz"), result: $("result") };
+
+  function show(name) { for (var k in screens) screens[k].hidden = (k !== name); }
+  function fmtTime(ms) { var s = Math.round(ms / 1000), m = Math.floor(s / 60), r = s % 60; return m + ":" + (r < 10 ? "0" : "") + r; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function listByKey(k) { for (var i = 0; i < LISTS.length; i++) if (LISTS[i].key === k) return LISTS[i]; return null; }
+
+  /* ---------- Auswahl der Listen (wird gemerkt) ---------- */
+  var selected = [];
+  function loadSel() {
+    try { var s = JSON.parse(localStorage.getItem(KEY + "-sel")); if (s && s.length) selected = s.filter(listByKey); } catch (e) {}
+    if (!selected.length) {   // ohne gespeicherte Auswahl: die als "current" markierte Liste (aktuelle Unité), sonst die erste
+      var cur = LISTS.filter(function (l) { return l.current; });
+      selected = [(cur.length ? cur[0] : LISTS[0]).key];
+    }
+  }
+  function saveSel() { try { localStorage.setItem(KEY + "-sel", JSON.stringify(selected)); } catch (e) {} }
+  function renderLists() {
+    var box = $("lists"); box.innerHTML = "";
+    LISTS.forEach(function (l) {
+      var on = selected.indexOf(l.key) >= 0;
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "list" + (on ? " on" : "") + (l.part2 ? " p2 b" + l.book : ""); b.setAttribute("aria-pressed", on ? "true" : "false");
+      b.innerHTML = '<span class="box">' + (on ? "✓" : "") + '</span><span><b>' + esc(l.title) + "</b><span>" + esc(l.sub) + '</span></span><span class="n">' + l.words.length + "</span>";
+      b.addEventListener("click", function () {
+        var i = selected.indexOf(l.key);
+        if (i >= 0) selected.splice(i, 1); else selected.push(l.key);
+        saveSel(); renderLists();
+      });
+      box.appendChild(b);
+    });
+    $("btn-start").disabled = selected.length === 0;
+    $("selrow").hidden = LISTS.length < 2;
+  }
+  function selKey() {   // Schlüssel für den Bestwert: eine Liste -> ihr key, alle -> "alle", sonst Kombination
+    if (selected.length === LISTS.length) return "alle";
+    return selected.slice().sort().join("+");
+  }
+  function selTitle(k) {
+    if (k === "alle") return "Alle Listen";
+    var parts = k.split("+").map(function (x) { var l = listByKey(x); return l ? l.title : x; });
+    return parts.join(" + ");
+  }
+
+  /* ---------- Gespeichertes (pro Gerät) ---------- */
+  function bestKey(m) { return KEY + "-best-" + m; }
+  function loadBest(m) { try { var b = JSON.parse(localStorage.getItem(bestKey(m))); if (b && typeof b.right === "number" && typeof b.ms === "number") return b; } catch (e) {} return null; }
+  function saveBest(m, b) { try { localStorage.setItem(bestKey(m), JSON.stringify(b)); } catch (e) {} }
+  function loadTotal() { try { var t = JSON.parse(localStorage.getItem(KEY + "-total")); if (t && typeof t.solved === "number") return t; } catch (e) {} return { solved: 0, right: 0 }; }
+  function addTotal(ok) { var t = loadTotal(); t.solved++; if (ok) t.right++; try { localStorage.setItem(KEY + "-total", JSON.stringify(t)); } catch (e) {} }
+  function totalText() { var t = loadTotal(); if (!t.solved) return ""; return "Du hast schon " + t.solved + (t.solved === 1 ? " Wort" : " Wörter") + " geschrieben, davon " + t.right + " richtig."; }
+  function showBest() {
+    var tt = totalText(); $("total-start").textContent = tt; $("total-start").hidden = tt === "";
+    renderLevels("levels-start");
+    var box = $("bests"); box.innerHTML = "";
+    var keys = LISTS.map(function (l) { return l.key; }).concat(["alle"]);
+    keys.forEach(function (k) {
+      var b = loadBest(k); if (!b) return;
+      var el = document.createElement("p"); el.className = "best";
+      el.textContent = "Bestes Ergebnis (" + selTitle(k) + "): " + b.right + " von " + TOTAL + " richtig in " + fmtTime(b.ms) + " Minuten";
+      box.appendChild(el);
+    });
+  }
+
+  /* Belohnung: gleiche Stufen wie in den anderen Trainern
+     Stufe 1: 0 Fehler und schnell      -> Feuerwerk  "Du bist ein Champion!"
+     Stufe 2: 0 Fehler, langsamer        -> Krone
+     Stufe 3: genau 1 Fehler             -> Daumen
+     Stufe 4: 2+ Fehler                  -> Keimling */
+  function verdict(wrong, ms, fast) {
+    if (wrong === 0 && ms < (fast || FAST_MS)) return { level: "fire",  badge: "", text: "Du bist ein Champion!", fireworks: true };
+    if (wrong === 0) return { level: "crown", badge: "👑", text: "Tolle Leistung! Alles richtig! Noch ein bisschen schneller." };
+    if (wrong === 1) return { level: "thumb", badge: "👍", text: "Übe fleissig weiter!" };
+    return { level: "seed", badge: "🌱", text: "Übung macht den Meister!" };
+  }
+  var LEVELS = [
+    { key: "fire",  icon: "✨", name: "Feuerwerk" },
+    { key: "crown", icon: "👑", name: "Krone" },
+    { key: "thumb", icon: "👍", name: "Daumen" },
+    { key: "seed",  icon: "🌱", name: "Keimling" }
+  ];
+  function loadLevels() {
+    var l = { fire: 0, crown: 0, thumb: 0, seed: 0 };
+    try { var s = JSON.parse(localStorage.getItem(KEY + "-levels")); if (s) for (var k in l) if (typeof s[k] === "number") l[k] = s[k]; } catch (e) {}
+    return l;
+  }
+  function addLevel(key) { var l = loadLevels(); if (key in l) l[key]++; try { localStorage.setItem(KEY + "-levels", JSON.stringify(l)); } catch (e) {} }
+  function renderLevels(id) {
+    var l = loadLevels(), any = false, html = "";
+    for (var i = 0; i < LEVELS.length; i++) {
+      var lv = LEVELS[i];
+      if (l[lv.key]) any = true;
+      html += '<div title="' + lv.name + '"><span class="ico" aria-hidden="true">' + lv.icon + "</span><b>" + l[lv.key] + "</b></div>";
+    }
+    $(id).innerHTML = html; $(id).hidden = !any;
+  }
+  function fireworks() {
+    try {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      var c = document.createElement("canvas");
+      c.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:999";
+      document.body.appendChild(c);
+      var ctx = c.getContext("2d"), dpr = window.devicePixelRatio || 1;
+      c.width = window.innerWidth * dpr; c.height = window.innerHeight * dpr;
+      var parts = [], colors = ["#ffd166", "#ff5d8f", "#06d6a0", "#4cc9f0", "#ff9f1c", "#ffffff", "#c77dff"];
+      function burst(x, y) {
+        var col = colors[Math.floor(Math.random() * colors.length)];
+        for (var i = 0; i < 90; i++) {
+          var a = Math.random() * Math.PI * 2, s = (2.5 + Math.random() * 5.5) * dpr;
+          parts.push({ x: x, y: y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 1, col: Math.random() < 0.7 ? col : "#ffffff", r: (2.5 + Math.random() * 3) * dpr });
+        }
+      }
+      var t0 = Date.now(), n = 0;
+      burst(0.5 * c.width, 0.25 * c.height);
+      var timer = setInterval(function () { if (n++ < 8) burst((0.15 + Math.random() * 0.7) * c.width, (0.12 + Math.random() * 0.45) * c.height); else clearInterval(timer); }, 330);
+      function frame() {
+        ctx.clearRect(0, 0, c.width, c.height);
+        for (var i = parts.length - 1; i >= 0; i--) {
+          var p = parts[i];
+          p.x += p.vx; p.y += p.vy; p.vy += 0.05 * dpr; p.vx *= 0.985; p.vy *= 0.985; p.life -= 0.013;
+          if (p.life <= 0) { parts.splice(i, 1); continue; }
+          ctx.globalAlpha = Math.max(0, p.life); ctx.fillStyle = p.col; ctx.shadowBlur = 8 * dpr; ctx.shadowColor = p.col;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r * (0.6 + 0.4 * p.life), 0, Math.PI * 2); ctx.fill();
+        }
+        ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+        if (Date.now() - t0 < 3600 || parts.length) requestAnimationFrame(frame);
+        else if (c.parentNode) c.parentNode.removeChild(c);
+      }
+      requestAnimationFrame(frame);
+    } catch (e) {}
+  }
+
+  /* ---------- Antworten vergleichen ----------
+     Stufe A (richtig):       gleich bis auf Gross/Klein, Leerzeichen, Satzzeichen, Apostroph-Form, œ/oe
+     Stufe B (fast richtig):  zusätzlich ohne Akzente, Bindestriche und Apostrophe gleich -> zählt als richtig, Schreibweise wird gezeigt
+     Alles andere ist falsch. Keine Tippfehler-Toleranz: beim Wörtlilernen zählt die Schreibweise.
+     Hilfe (Artikel + 2 Buchstaben): das Wort zählt bei richtiger Antwort als richtig, wird aber orange mit 💡 markiert. */
+  function base(s) {
+    return String(s).toLowerCase()
+      .replace(/[’‘`´]/g, "'").replace(/œ/g, "oe").replace(/æ/g, "ae")
+      .replace(/…/g, " ").replace(/\.\.\./g, " ")
+      .replace(/[.!?,;:«»"]/g, "")
+      .replace(/\s*'\s*/g, "'")
+      .replace(/\s+/g, " ").trim();
+  }
+  function loose(s) {
+    return base(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[-']/g, " ").replace(/\s+/g, " ").trim();
+  }
+  function variants(fr, extra, noSplit) {   // alle akzeptierten Schreibweisen eines Eintrags
+    var out = [];
+    function add(s) { s = s.trim(); if (s && out.indexOf(s) < 0) out.push(s); }
+    function expand(s) {
+      add(s);
+      var noParen = s.replace(/\s*\([^)]*\)/g, "").trim();            // ohne Klammerzusatz: "l'allemand (m)" -> "l'allemand"
+      add(noParen);
+      add(s.replace(/[()]/g, ""));                                     // Klammern weg, Inhalt bleibt: "aller à", "sur la tablette numérique"
+      var m = noParen.match(/^(.*?)(\S+)\/(\S+)(.*)$/);                // "un/une enfant" -> "un enfant", "une enfant"
+      if (m) { add(m[1] + m[2] + m[4]); add(m[1] + m[3] + m[4]); }
+    }
+    expand(fr);
+    if (!noSplit && fr.indexOf(",") >= 0) fr.split(",").forEach(expand);   // "la mère, la maman" -> beide einzeln
+    (extra || []).forEach(expand);
+    return out;
+  }
+  function grade(input, item) {   // 2 = richtig, 1 = fast richtig (Akzente/Bindestrich), 0 = falsch
+    var a = base(input), al = loose(input);
+    if (!a) return 0;
+    var vs = item.acc;
+    for (var i = 0; i < vs.length; i++) if (a === base(vs[i])) return 2;
+    for (var j = 0; j < vs.length; j++) if (al === loose(vs[j])) return 1;
+    return 0;
+  }
+
+  /* ---------- Runde ---------- */
+  var tasks = [], idx = 0, answered = false, taskStart = 0, elapsed = 0, roundKey = "alle";
+  function pool() {
+    var p = [];
+    selected.forEach(function (k) {
+      var l = listByKey(k); if (!l) return;
+      l.words.forEach(function (w) {
+        var extra = Array.isArray(w[2]) ? w[2] : null, noSplit = w[2] === "!" || w[3] === "!";
+        var m = w[1].replace(/\s*\([^)]*\)/g, "").match(/^(.*?)(\S+)\/(\S+)(.*)$/);   // "droit/droite" -> Paar (m/w); Klammern wie "(m/f pl)" zählen nicht
+        if (m) {
+          var a = (m[1] + m[2] + m[4]).trim(), b = (m[1] + m[3] + m[4]).trim();
+          p.push({ de: w[0], fr: a + " / " + b, pair: true, fr1: a, fr2: b, acc: variants(a, null, true), acc2: variants(b, null, true), list: l.title });
+        } else {
+          p.push({ de: w[0], fr: w[1], acc: variants(w[1], extra, noSplit), list: l.title });
+        }
+      });
+    });
+    return p;
+  }
+  function newRound() {
+    if (!selected.length) return;
+    roundKey = selKey();
+    var p = shuffle(pool());
+    tasks = p.slice(0, Math.min(TOTAL, p.length));
+    idx = 0; elapsed = 0;
+    var dots = ""; for (var d = 0; d < tasks.length; d++) dots += '<span class="dot"></span>';
+    $("dots").innerHTML = dots;
+    $("dots").style.gridTemplateColumns = "repeat(" + tasks.length + ", 1fr)";
+    show("quiz");
+    showTask();
+  }
+  function showTask() {
+    var t = tasks[idx];
+    answered = false;
+    $("count").textContent = "Wort " + (idx + 1) + " von " + tasks.length;
+    $("from").textContent = selected.length > 1 ? t.list : "Deutsch";
+    $("word").textContent = t.de;
+    $("word").className = "word" + (t.de.length > 22 ? " long" : "");
+    var inp = $("in-fr"), inp2 = $("in-fr2");
+    inp.value = ""; inp.className = ""; inp.readOnly = false;
+    inp2.value = ""; inp2.className = ""; inp2.readOnly = false;
+    $("lbl-fr").textContent = t.pair ? "männlich" : "Französisch";
+    $("lbl2-wrap").hidden = !t.pair;
+    $("hint").textContent = "";
+    $("btn-help").disabled = false;
+    $("feedback").className = "feedback"; $("feedback").textContent = "";
+    $("btn-check").hidden = false; $("btn-check").disabled = true;
+    $("btn-go").hidden = true;
+    setAccents(true);
+    var dots = $("dots").children;
+    for (var i = 0; i < dots.length; i++) dots[i].classList.toggle("now", i === idx);
+    taskStart = Date.now();
+    setTimeout(function () { inp.focus(); }, 50);
+  }
+  function setAccents(on) {
+    var bs = $("accents").querySelectorAll("button");
+    for (var i = 0; i < bs.length; i++) bs[i].disabled = !on;
+  }
+  function activeInput() {   // Feld, das zuletzt den Fokus hatte (für Sonderzeichen-Tasten)
+    var t = tasks[idx];
+    if (t && t.pair && lastField === 2) return $("in-fr2");
+    return $("in-fr");
+  }
+  var lastField = 1;
+  function updateCheck() {
+    var t = tasks[idx];
+    var ok = !!$("in-fr").value.trim() && (!t || !t.pair || !!$("in-fr2").value.trim());
+    $("btn-check").disabled = !ok;
+  }
+  function hintFor(exp) {   // Artikel (falls vorhanden) + erste zwei Buchstaben, Rest als Striche
+    var s = exp.replace(/\s*\([^)]*\)/g, "").replace(/[…]/g, "").trim();
+    var pre = "";
+    var m = s.match(/^((?:le|la|les|un|une|des)\s+|l')(.*)$/i);
+    if (m) { pre = m[1]; s = m[2]; }
+    var out = "", shown = 0;
+    for (var i = 0; i < s.length; i++) {
+      var ch = s[i];
+      if (/[\s'’\-.,!?]/.test(ch)) { out += ch === " " ? "\u2002" : ch; continue; }
+      if (shown < 2) { out += ch; shown++; } else out += "_";
+    }
+    return pre + out;
+  }
+  function help() {
+    if (answered) return;
+    var t = tasks[idx];
+    t.helped = true;
+    var h = hintFor(t.pair ? t.fr1 : t.fr);
+    if (t.pair) h += "  /  " + hintFor(t.fr2);
+    $("hint").innerHTML = esc(h) + "<small>Artikel und die ersten zwei Buchstaben</small>";
+    $("btn-help").disabled = true;
+    activeInput().focus();
+  }
+  function check() {
+    if (answered) return;
+    var inp = $("in-fr"), val = inp.value.trim(), t = tasks[idx];
+    if (!val) return;
+    var inp2 = $("in-fr2"), val2 = inp2.value.trim();
+    if (t.pair && !val2) { inp2.focus(); return; }
+    answered = true;
+    elapsed += Date.now() - taskStart;
+    t.given = val;
+    t.grade = grade(val, t);
+    if (t.pair) {
+      t.given2 = val2;
+      var g2 = grade(val2, { acc: t.acc2 });
+      t.grade1 = t.grade; t.grade2 = g2;
+      t.grade = Math.min(t.grade, g2);
+      inp2.readOnly = true; inp2.className = g2 > 0 ? "ok" : "no";
+      t.given = val + " / " + val2;
+    }
+    t.ok = t.grade > 0;
+    addTotal(t.ok);
+    inp.readOnly = true; inp.className = (t.pair ? t.grade1 : t.grade) > 0 ? "ok" : "no";
+    setAccents(false);
+    $("btn-help").disabled = true;
+    var fb = $("feedback");
+    fb.className = "feedback " + (t.grade === 2 && !t.helped ? "ok" : t.grade > 0 ? "almost" : "no");
+    var text = t.grade === 2 ? (t.helped ? "Richtig – mit Hilfe." : "Richtig!") : t.grade === 1 ? "Richtig – achte auf die Schreibweise:" : "Das stimmt leider nicht.";
+    fb.innerHTML = text + '<span class="solution">' + esc(t.fr) + "</span>";
+    var dot = $("dots").children[idx]; dot.classList.remove("now"); dot.classList.add(t.ok ? "ok" : "no");
+    $("btn-check").hidden = true;
+    var go = $("btn-go"); go.textContent = idx === tasks.length - 1 ? "Zum Ergebnis" : "Weiter"; go.hidden = false; go.focus();
+  }
+  function next() {
+    if (idx < tasks.length - 1) { idx++; showTask(); } else finish(false);
+  }
+  function reviewLine(t) {
+    var cls = t.grade === 2 && !t.helped ? "ok" : t.grade > 0 ? "almost" : "no";
+    var mark = t.grade > 0 ? (t.helped ? "💡 " : "✓ ") : "✗ ";
+    var sol = t.grade === 2 ? esc(t.fr) : t.grade === 1 ? "<s>" + esc(t.given) + "</s> <b>" + esc(t.fr) + "</b>" : "<s>" + esc(t.given || "–") + "</s> <b>" + esc(t.fr) + "</b>";
+    return '<li class="' + cls + '"><span class="de">' + esc(t.de) + "</span><span>" + mark + sol + "</span></li>";
+  }
+  function finish(aborted) {
+    var done = aborted ? tasks.slice(0, idx + (answered ? 1 : 0)) : tasks;
+    if (!done.length) { toMenu(); return; }
+    var right = 0; done.forEach(function (t) { if (t.ok) right++; });
+    var wrong = done.length - right;
+    $("n-right").textContent = right; $("n-wrong").textContent = wrong; $("n-time").textContent = fmtTime(elapsed);
+    $("record").textContent = "";
+    if (aborted || done.length < TOTAL) { $("badge").hidden = true; $("headline").textContent = aborted ? "Übung beendet." : "Geschafft!"; }
+    else {
+      var v = verdict(wrong, elapsed, FAST_MS);
+      addLevel(v.level);
+      $("badge").textContent = v.badge; $("badge").hidden = v.badge === "";
+      $("headline").textContent = v.text;
+      var best = loadBest(roundKey);
+      var isRecord = !best || right > best.right || (right === best.right && elapsed < best.ms);
+      if (isRecord) saveBest(roundKey, { right: right, ms: elapsed });
+      $("record").textContent = isRecord && best ? "Das ist dein neues bestes Ergebnis!"
+        : (!isRecord ? "Dein bestes Ergebnis bisher: " + best.right + " richtig in " + fmtTime(best.ms) + " Minuten" : "");
+      if (v.fireworks) setTimeout(fireworks, 100);
+    }
+    $("total").textContent = totalText();
+    renderLevels("levels-result");
+    $("review").innerHTML = done.map(reviewLine).join("");
+    show("result");
+    $("btn-again").focus();
+  }
+  function toMenu() { renderLists(); showBest(); show("start"); }
+
+  /* ---------- Steuerung ---------- */
+  $("btn-start").addEventListener("click", newRound);
+  $("btn-all").addEventListener("click", function () { selected = LISTS.map(function (l) { return l.key; }); saveSel(); renderLists(); });
+  $("btn-none").addEventListener("click", function () { selected = []; saveSel(); renderLists(); });
+  $("btn-check").addEventListener("click", check);
+  $("btn-go").addEventListener("click", next);
+  $("btn-stop").addEventListener("click", function () { finish(true); });
+  $("btn-again").addEventListener("click", newRound);
+  $("btn-menu").addEventListener("click", toMenu);
+  $("btn-help").addEventListener("click", help);
+  $("in-fr").addEventListener("input", updateCheck);
+  $("in-fr2").addEventListener("input", updateCheck);
+  $("in-fr").addEventListener("focus", function () { lastField = 1; });
+  $("in-fr2").addEventListener("focus", function () { lastField = 2; });
+  $("in-fr").addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    if (answered) { next(); return; }
+    var t = tasks[idx];
+    if (t && t.pair && this.value.trim() && !$("in-fr2").value.trim()) { $("in-fr2").focus(); return; }   // Paar: weiter ins zweite Feld
+    check();
+  });
+  $("in-fr2").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); if (answered) next(); else check(); } });
+  $("accents").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b || b.disabled) return;
+    var inp = activeInput(), ch = b.getAttribute("data-ch");
+    var s = inp.selectionStart == null ? inp.value.length : inp.selectionStart, en = inp.selectionEnd == null ? s : inp.selectionEnd;
+    inp.value = inp.value.slice(0, s) + ch + inp.value.slice(en);
+    inp.focus(); try { inp.setSelectionRange(s + ch.length, s + ch.length); } catch (err) {}
+    updateCheck();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey || e.defaultPrevented) return;   // Enter im Eingabefeld ist schon behandelt
+    if (!screens.quiz.hidden && answered && e.key === "Enter") { e.preventDefault(); next(); }
+    else if (!screens.result.hidden && e.key === "Enter") { e.preventDefault(); newRound(); }
+  });
+
+  loadSel();
+  renderLists();
+  showBest();
+})();
+</script>
+</body>
+</html>
